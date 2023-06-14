@@ -1,0 +1,71 @@
+.form {
+    width: 1200px;
+    height: 1200px;
+    border: 4px solid brown;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+.age {
+    padding-left: 10px;
+}
+
+.income {
+    padding-left: 10px;
+}
+
+.gender {
+    padding-left: 10px;
+}
+
+.gender > text {
+
+}
+
+.product{
+    padding-left: 10px;
+}
+
+.newpro {
+    padding-left: 10px;
+}
+
+.pay{
+    padding-left: 10px;`
+}
+
+.dola{
+    padding-left: 10px;
+}
+.cen{
+    padding-left: 130px;
+}
+
+.features {
+
+   padding-left: 10px;
+}
+
+.table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    padding-left: 10px;
+}
+
+td , th {
+    border: 1px solid teal;
+    text-align: left;
+    padding: 8px;
+    
+}
+
+.dam{
+    background-color: gray;
+}
+
+.dam2
+{
+    background-color: whitesmoke;
+}

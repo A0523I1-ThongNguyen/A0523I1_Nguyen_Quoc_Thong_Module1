@@ -1,0 +1,13 @@
+.tieude{
+    color: blue;
+    background-color:aquamarine;
+}
+
+.form {
+    width: 800px;
+    height: 800px;
+    border: 4px solid grey;
+    border-radius: 10px;
+    background-color: bisque;
+    padding-left: 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Học Viên</title>
+    <link rel="stylesheet" href="dkhv.css" >
+</head>
+<body>
+    <div class="form">
+        <form method="get" action="dangkithanhcong.html">
+
+        <h1 class="tieude" > Đăng Ký Học Viên  </h1>
+
+        <div class="user">
+            <table>
+                <tr>
+                  <td> Username: </td>
+                  
+                  <td> <input type="text" name=""> </td>
+                </tr>
+  
+                <tr>
+                  <td> Ngày sinh:</td> 
+                  
+                  <td>  <input type="date" name=""> </td>
+              </tr>
+                       
+          </table>
+        </div>
+
+        <div class="gender">
+
+            <table>
+         <tr>
+            <td><h4> Giới Tính </h4></td>
+            
+           <td> <input type="radio" name="gender" > Nam </td>
+           <td>  <input type="radio" name="gender"> Nữ </td>
+         </tr>
+    </table>
+
+        </div>
+
+        <div class="dc">
+            
+            <h4>Địa Chỉ </h4>
+            <input style="height: 100px;" type="text">
+
+        </div>
+
+        <div class="lop">
+            <table>
+          <tr>
+            <td p>Chọn Lớp : </td>
+            <td><select name="lop" id="" name="Chonlop" >
+                <option value="">A1</option>
+                <option value="">A2</option>
+                <option value="">A3</option></td>
+            </select>
+        </tr>
+    </table>
+        </div>
+
+        <div class="email">
+            <table>
+            <tr><td> <h4>Email: </h4></td>
+          <td>  <input type="text" name=""></td>
+        </tr>
+           <tr> 
+            <td> <h4>Điện Thoại: </h4></td>
+         <td>   <input type="number" name=""> </td>
+        </tr>
+    </table>
+        </div>
+    
+      
+      <input type = "submit" name="btSubmit" value="Đăng Ký"/>
+
+      <input type = "reset" name="btResert" value="Nhập Lại"/>
+        
+      
+    </form >
+</div>
+</body>
+</html>
