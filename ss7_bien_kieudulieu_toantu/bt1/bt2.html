@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi độ </title>
+</head>
+<body>
+
+<input placeholder ="Nhập độ C" id = "doc">
+<button onclick= "chuyendoi()" >Chuyển đổi </button>
+<input placeholder ="Độ F" id = "dof">
+
+
+
+<script>
+
+    function chuyendoi() {
+
+      let  c = document.getElementById("doc").value;
+      let  f = document.getElementById("dof").value;
+      let cd = parseInt(c) * 9/5 + 32;
+      document.getElementById("dof").value = cd;
+
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chu Vi Hình Tròn</title>
+</head>
+<body>
+        <input placeholder="Nhap ban kinh" id="bk">
+        <button onclick="add()">Tính Chu Vi</button>
+        <p id = "kq">Chu vi hình tròn  là: </p>
+
+        <script>
+
+            function add() {
+                let pi = 3.14;
+                a = document.getElementById("bk").value;
+                b = 2 * parseInt(a) * pi;
+                document.getElementById("kq").innerHTML = "Chu vi hình tròn là : " + b;
+            }
+
+        </script>
+</body>
+</html>

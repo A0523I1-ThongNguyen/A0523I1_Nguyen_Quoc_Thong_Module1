@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền </title>
+</head>
+<body>
+
+            <table>
+
+                <tr>
+                    <th>Amount</th>
+                    <th>From Currency</th>
+                    <th>To Currency</th>
+                </tr>
+
+                <tr>
+                    <td> <input id="amount" type="text">  </td>
+
+                    <td>
+                        <select style="width: 150px" id="from_code">
+                            <option value="VND" selected>VietNam</option>
+                            <option value="USD">USA</option>
+
+                        </select>
+                    </td>
+
+                    <td>
+                        <select style="width: 150px" id="to_code">
+                            <option value="VND">VietNam</option>
+                            <option value="USD" selected>USA</option>
+
+                        </select>
+                    </td>
+                    <td>
+                        <button onclick="convert()">Convert</button>
+                    </td>
+                </tr>
+
+            </table>
+
+            <p>Result : <span id="result"></span></p>
+
+        <script>
+           const exchangeRates=  [
+               {
+                   from: "VND",
+                   to: "USD",
+                   rate: 1/23000,
+               },
+               {
+                   from: "USD",
+                   to: "VND",
+                   rate: 23000,
+               }
+
+           ]
+
+            function convert() {
+                let amount = document.getElementById("amount").value
+                let from = document.getElementById("from_code").value
+                let to = document.getElementById("to_code").value
+                let exchageRate = getExchangeRate(from, to)
+                let result = amount * exchageRate.rate
+                document.getElementById("result").innerHTML = result
+
+            }
+            function getExchangeRate(from, to) {
+                let exchangeRate = exchangeRates.find(function (ex) {
+                    return from === ex.from && to === ex.to
+                })
+                return exchangeRate;
+            }
+        </script>
+</body>
+</html>

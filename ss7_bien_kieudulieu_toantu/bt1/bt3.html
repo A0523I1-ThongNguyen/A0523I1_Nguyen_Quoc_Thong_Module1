@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện Tích Hình Tròn</title>
+</head>
+<body>
+
+
+    <input placeholder="Nhập bán kính " id="bk">
+        <button onclick="dientich()"> Tính Diện Tích Hình Tròn</button>
+    <p id="kq">Diện Tích Hình Tròn là:  </p>
+
+    <script>
+        function dientich() {
+            a = document.getElementById("bk").value;
+            let pi = 3.14;
+            dtht = pi * parseInt(a) * parseInt(a);
+            document.getElementById("kq").innerText = "Diện Tích Hình Tròn Là: " + dtht;
+        }
+    </script>
+
+</body>
+</html>

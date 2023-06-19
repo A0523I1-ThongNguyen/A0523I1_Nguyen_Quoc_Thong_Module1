@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+            <input placeholder="" id="number1">
+            <input placeholder="" id="number2"></br>
+
+            <button onclick="add()">Addition(+)</button>
+            <button onclick="sub()">Subtraction(-)</button>
+            <button onclick="mul()"> Multiplication(X)</button>
+            <button onclick="div()">Division(/) </button>
+            <p id= "kq"> Result : </p>
+
+
+        <script>
+            function add() {
+                a = document.getElementById("number1").value;
+                b = document.getElementById("number2").value;
+                c = parseInt(a) + parseInt(b);
+                document.getElementById("kq").innerHTML = "Result Addition : "+ c;
+            }
+
+
+            function sub() {
+                a = document.getElementById("number1").value;
+                b = document.getElementById("number2").value;
+                c = parseInt(a) - parseInt(b);
+                document.getElementById("kq").innerHTML =  " Result Subtraction : " +c;
+            }
+
+            function mul() {
+
+                a = document.getElementById("number1").value;
+                b = document.getElementById("number2").value;
+                c = parseInt(a) * parseInt(b);
+                document.getElementById("kq").innerHTML = " Result Multiplication: " + c;
+            }
+
+            function div() {
+
+                a = document.getElementById("number1").value;
+                b = document.getElementById("number2").value;
+                c = parseInt(a) / parseInt(b);
+                document.getElementById("kq").innerHTML = " Result Division: " + c;
+            }
+        </script>
+
+</body>
+</html>
