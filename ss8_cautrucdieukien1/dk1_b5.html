@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Điểm Kiểm Tra : <input id="bkt"></h4>
+<h4>Điểm Giữa Kì : <input id="tgk"> </h4>
+<h4>Điểm Cuối Kì : <input id="tck"></h4>
+
+<button onclick="add()">Diem Tong ket</button>
+<p id="result"></p>
+
+<script>
+    function add(){
+    bkt = +document.getElementById("bkt").value;
+    tgk = +document.getElementById("tgk").value;
+    tck = +document.getElementById("tck").value;
+
+
+    avg = (bkt + tgk * 2 + tck * 3) / 6
+
+    if (avg >= 9){
+        alert("Xuất sắc")
+    } else if (avg >=8){
+        alert("Khá")
+    }else if (avg >= 5){
+        alert("Trung bình")
+    }else {
+        alert("Yếu")
+    }
+
+    }
+
+</script>
+
+</body>
+</html>

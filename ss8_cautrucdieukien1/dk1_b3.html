@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <input placeholder="Enter number" id="number">
+        <button onclick="add()">Print</button>
+        <p id="result"></p>
+
+        <script>
+            function add() {
+                a = document.getElementById("number").value;
+                if (a > 0) {
+                    alert("Đây là số nguyên dương")
+                    document.getElementById("result").innerText = "Số " + a + " là số nguyên dương lớn hơn 0";
+                }else if (a < 0) {
+                    alert("Đây là số nguyên âm")
+                    document.getElementById("result").innerText = "Số " + a + " là số nguyên âm nhỏ hơn "
+                } else {
+                    alert("Bạn vừa nhập vào số 0")
+                    document.getElementById("result").innerText = "Bạn vừa nhập vào số 0";
+                }
+            }
+        </script>
+
+</body>
+
+</html>

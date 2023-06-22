@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input placeholder="enter number1" id="number1">
+    <input placeholder="enter number2" id="number2">
+    <input placeholder="enter number3" id="number3">
+
+    <button onclick="add()">Biggest number</button>
+    <p Biggest number : > <span id="result"></span>  </p>
+
+    <script>
+
+     function add() {
+         a = document.getElementById("number1").value;
+         b = document.getElementById("number2").value;
+         c = document.getElementById("number3").value;
+
+
+
+         if (a > b && a > c) {
+             alert("so lon nhat la " + a);
+         }else if ( b > c) {
+             alert("so lon nhat la " + b);
+         }else {
+            alert ("so lon nhat la " + c);
+         }
+     }
+
+    </script>
+</body>
+</html>

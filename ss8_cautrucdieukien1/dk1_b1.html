@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <input placeholder="Number 1" id="number1">
+      <input placeholder="number 2" id="number2">
+      <button onclick="add()">Result</button>
+        <p id="result">Result: </p>
+
+        <script>
+            function add() {
+                a = document.getElementById("number1").value;
+                b = document.getElementById("number2").value;
+                if (a % b == 0) {
+                    alert("a chia het cho b");
+                    document.getElementById("result").innerText = a % b == 0;
+                } else {
+                    alert("a khong chia het cho b")
+                    document.getElementById("result").innerText = a % b == 1;
+                }
+            }
+        </script>
+</body>
+
+
+</html>

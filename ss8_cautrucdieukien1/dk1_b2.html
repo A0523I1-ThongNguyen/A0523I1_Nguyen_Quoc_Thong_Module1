@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <input placeholder="Enter age" id="age">
+        <button onclick="add()">Result</button>
+        <p id="result"></p>
+
+        <script>
+            function add(){
+            a = document.getElementById("age").value;
+            if (a >= 15){
+                alert("Du tuoi vao lop 10");
+                document.getElementById("result").innerText = a >= 15;
+            }else{
+                alert("Khong du tuoi vao lop 10");
+                document.getElementById("result").innerText = a >= 15;
+            }
+
+            }
+        </script>
+
+</body>
+</html>
