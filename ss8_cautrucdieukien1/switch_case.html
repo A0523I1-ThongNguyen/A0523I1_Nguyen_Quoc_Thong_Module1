@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+        <meta charset="UTF-8">
+        <title>Title</title>
 </head>
 <body>
 
-        <input id="day1">
-        <button onclick="add()">Tính số ngày</button></br>
-        <p id ="result0"></p>
-        <h3>Và</h3>
+<input id="day1">
+<button onclick="add()">Tính số ngày</button></br>
+<p id ="result0"></p>
+<h3>Và</h3>
 
-        <input id="day2">
-        <button onclick="addtwo()">Tính số ngày</button>
-        <p id="result"></p>
+<input id="day2">
+<button onclick="addtwo()">Tính số ngày</button>
+<p id="result"></p>
 
-        <script>
-            function add() {
+<script>
+        function add() {
                 a = +document.getElementById("day1").value;
                 b = +document.getElementById("day2").value;
 
                 switch (a) {
-                    case 1:
-                        document.getElementById("result0").innerText =  "Tháng 1 có 31 ngày";
-                        break;
-                    case 2: document.getElementById("result0").innerText =  "Tháng 2 có 28 hoặc 29 ngày";
-                        break;
-                    case 3:
-                        document.getElementById("result0").innerText =  "Tháng  có 31 ngày";
-                        break;
-                    case 4:
-                        document.getElementById("result0").innerText =  "Thang 4 co 30 ngay";
-                        break;
-                    case 5:
-                        document.getElementById("result0").innerText =  "Tháng 5 có 31 gày";
-                        break
-                    case 6:
-                        document.getElementById("result0").innerText =  "Thang 6 co 30 ng";
-                        break;
-                    case 7:
-                        document.getElementById("result0").innerText =  "Tháng  có 31 ngày";
-                        break;
-                    case 8:
-                        document.getElementById("result0").innerText =  "Tháng 8 có 31 ngày";
-                        break;
-                    case 9:
-                        document.getElementById("result0").innerText =  "Thang 9 co 30 ngày";
-                        break;
-                    case 10:
-                        document.getElementById("result0").innerText =  "Tháng 10 có 31 ngày";
-                        break;
-                    case 11:
-                        document.getElementById("result0").innerText =  "Tháng 11 có 30 ngày";
-                        break;
-                    case 12:
-                        document.getElementById("result0").innerText =  "Tháng 12 có 31 ngày";
-                        break;
+                        case 1:
+                                document.getElementById("result0").innerText =  "Tháng 1 có 31 ngày";
+                                break;
+                        case 2: document.getElementById("result0").innerText =  "Tháng 2 có 28 hoặc 29 ngày";
+                                break;
+                        case 3:
+                                document.getElementById("result0").innerText =  "Tháng  có 31 ngày";
+                                break;
+                        case 4:
+                                document.getElementById("result0").innerText =  "Thang 4 co 30 ngay";
+                                break;
+                        case 5:
+                                document.getElementById("result0").innerText =  "Tháng 5 có 31 gày";
+                                break
+                        case 6:
+                                document.getElementById("result0").innerText =  "Thang 6 co 30 ng";
+                                break;
+                        case 7:
+                                document.getElementById("result0").innerText =  "Tháng  có 31 ngày";
+                                break;
+                        case 8:
+                                document.getElementById("result0").innerText =  "Tháng 8 có 31 ngày";
+                                break;
+                        case 9:
+                                document.getElementById("result0").innerText =  "Thang 9 co 30 ngày";
+                                break;
+                        case 10:
+                                document.getElementById("result0").innerText =  "Tháng 10 có 31 ngày";
+                                break;
+                        case 11:
+                                document.getElementById("result0").innerText =  "Tháng 11 có 30 ngày";
+                                break;
+                        case 12:
+                                document.getElementById("result0").innerText =  "Tháng 12 có 31 ngày";
+                                break;
 
                         default : alert("Nhập sai tháng");
 
                 }
 
-            }
-            function addtwo() {
+        }
+        function addtwo() {
 
                 b = +document.getElementById("day2").value;
 
                 switch (b){
-                    case 2: document.getElementById("result").innerText =  "Tháng 2 có 28 hoặc 29 ngày";
-                    break;
-                    default: alert("nhập tháng 2");
-                    break;
+                        case 2: document.getElementById("result").innerText =  "Tháng 2 có 28 hoặc 29 ngày";
+                                break;
+                        default: alert("Chỉ nhập tháng 2");
+                                break;
 
                 }
-            }
-        </script>
+        }
+</script>
 
 </body>
 </html>
