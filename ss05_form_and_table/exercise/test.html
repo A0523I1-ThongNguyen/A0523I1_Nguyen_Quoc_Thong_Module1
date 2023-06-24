@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<script type="text/javascript">
+function tinh()
+{
+var dhk1 = parseInt(document.getElementById('dtb1').value)
+var dhk2 = parseInt(document.getElementById('dtb2').value)
+var dtb = (dhk1 + dhk2*2)/3;
+
+
+document.getElementById("dtbcn").value = dtb;
+if(dtb>8)
+document.getElementById("xl").value = "Khá";
+else if(dtb<=8&&dtb>6.5)
+document.getElementById("xl").value = "Khá";
+else if(dtb<6.5&&dtb>=5)
+document.getElementById("xl").value ="Trung bình";
+else if(dtb<5)
+document.getElementById("xl").value ="Yếu";
+}
+</script>
+
+
+</head>
+<form action="" method="post">
+<table>
+<tr>
+<td colspan="2" style="text-align:center"><h1>Xếp loại cuối năm</h1></td>
+</tr>
+<tr>
+<td>Điểm trung bình HKI: </td>
+<td><input type="text" name="dtb" id="dtb1" /></td>
+</tr>
+<tr>
+<td>Điểm trung bình HKII: </td>
+<td><input type="text" name="dtb" id="dtb2" /></td>
+</tr>
+<tr>
+<td>Điểm trung cuối năm: </td>
+<td><input type="text" name="dtb" id="dtbcn"/></td>
+</tr>
+<tr>
+<td>Xếp loại: </td>
+<td><input type="text" id="xl" /></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><input type="button" value="Xếp loại"
+onclick="tinh()" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

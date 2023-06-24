@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29d976e9-ec75-422f-a90e-5b692cd84652" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/bt1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/bt2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/bt3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/cdtt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/maytinh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New folder/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss/check.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/cscn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/cscn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/switch_case.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/switch_case.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2RAu0bJUijCJl6v7sIPFo6IuT1N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss8_cautrucdieukien1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.maytinh.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/New folder/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="maytinh.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/New folder/maytinh.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.maytinh.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29d976e9-ec75-422f-a90e-5b692cd84652" name="Default Changelist" comment="" />
+      <created>1686704984744</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686704984744</updated>
+      <workItem from="1686704985939" duration="1817000" />
+      <workItem from="1686708847060" duration="5000" />
+      <workItem from="1686730562027" duration="1364000" />
+      <workItem from="1686744189577" duration="3174000" />
+      <workItem from="1686882513590" duration="2148000" />
+      <workItem from="1686900056958" duration="2958000" />
+      <workItem from="1686912568912" duration="7601000" />
+      <workItem from="1687053502920" duration="2635000" />
+      <workItem from="1687139334698" duration="14325000" />
+      <workItem from="1687158732107" duration="6120000" />
+      <workItem from="1687166748352" duration="1150000" />
+      <workItem from="1687171150140" duration="1597000" />
+      <workItem from="1687172778131" duration="5206000" />
+      <workItem from="1687178628130" duration="642000" />
+      <workItem from="1687317608164" duration="28000" />
+      <workItem from="1687318016826" duration="1042000" />
+      <workItem from="1687334157773" duration="42000" />
+      <workItem from="1687334947575" duration="1392000" />
+      <workItem from="1687348378055" duration="522000" />
+      <workItem from="1687348917248" duration="10000" />
+      <workItem from="1687348971724" duration="1394000" />
+      <workItem from="1687404673873" duration="18000" />
+      <workItem from="1687434459550" duration="27000" />
+      <workItem from="1687434592752" duration="9000" />
+      <workItem from="1687498200585" duration="155000" />
+      <workItem from="1687523246980" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="120" y="34" key="#Live_Templates" timestamp="1686730628317">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="120" y="34" key="#Live_Templates/0.0.1536.816@0.0.1536.816" timestamp="1686730628317" />
+    <state x="542" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1687171188737">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="542" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1687171188737" />
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1687523272031">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687523272031" />
+    <state x="425" y="185" key="run.anything.popup" timestamp="1687176313945">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="425" y="185" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1687176313945" />
+  </component>
+</project>
