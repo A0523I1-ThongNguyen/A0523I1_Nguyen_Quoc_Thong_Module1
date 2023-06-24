@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <input placeholder="Đó dài cạnh" id="dodaicanh">
+        <button onclick="add()">Tính</button>
+        <p>Diện tích hình vuông là: <span id="result"></span></p>
+
+        <script>
+            function add() {
+                canh = document.getElementById("dodaicanh").value;
+                let dientich = canh * canh;
+                if (canh>0){
+                    alert(dientich + "cm2");
+                    document.getElementById("result").innerText = dientich +"cm2";
+                }else{
+                    alert("Nhập độ dài cạnh lơn hơn 0")
+                }
+            }
+        </script>
+</body>
+</html>

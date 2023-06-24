@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<input placeholder="Nhap met" id="met">
+<button onclick="add()">Chuyen doi</button>
+<input placeholder="feet" id="feet">
+<p id="result"></p>
+
+<script>
+    function add(){
+        met = document.getElementById("met").value;
+        let feet = met * 3.2808;
+
+        if (met>0){
+            alert(feet)
+            document.getElementById("feet").value = feet + "ft";
+        }else {
+            alert("Không thể chuyển dổi (Nhập sô lớn hơn 0)")
+        }
+
+    }
+</script>
+
+</body>
+</html>

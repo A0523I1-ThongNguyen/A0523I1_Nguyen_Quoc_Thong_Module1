@@ -20,22 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29d976e9-ec75-422f-a90e-5b692cd84652" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/bt1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/bt2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/bt3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/cdtt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/maytinh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../New folder/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss/check.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/cscn.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/cscn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/dk1_b5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien1/switch_case.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien1/switch_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss8_cautrucdieukien1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -122,6 +113,8 @@
       <workItem from="1687434592752" duration="9000" />
       <workItem from="1687498200585" duration="155000" />
       <workItem from="1687523246980" duration="27000" />
+      <workItem from="1687583800555" duration="2284000" />
+      <workItem from="1687593791443" duration="2398000" />
     </task>
     <servers />
   </component>
@@ -149,10 +142,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="542" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1687171188737" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1687523272031">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1687593557489">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687523272031" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687593557489" />
     <state x="425" y="185" key="run.anything.popup" timestamp="1687176313945">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input placeholder="Nhap Do C" id="doc">
+    <button onclick="add()">Chuyen doi</button>
+    <input placeholder="Do F" id="dof">
+    <p id="result"></p>
+
+    <script>
+
+        function add() {
+            doc = document.getElementById("doc").value;
+
+            let dof = doc * 9/5+32;
+
+            if (doc){
+                alert(dof)
+                document.getElementById("dof").value = dof;
+            }
+        }
+    </script>
+
+</body>
+</html>
