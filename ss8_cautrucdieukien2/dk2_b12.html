@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <input placeholder="Số tiền gửi" id="sotiengui">
+        <input placeholder="Lãi uất" id="laisuat">
+        <input placeholder="Số tháng gửi" id="sothanggui">
+        <button onclick="add()">Tien Lai</button>
+        <p>Tiền lãi hàng tháng của bạn là : <span id="result"></span> </p>
+
+
+        <script>
+
+            function add() {
+                   sotiengui =  document.getElementById("sotiengui").value;
+                   laisuat =  document.getElementById("laisuat").value;
+                   sothanggui =  document.getElementById("sothanggui").value;
+
+                   let laisuathangthang ;
+
+                   //Số tiền lãi theo tháng = Số tiền gửi x lãi suất (%năm)/12 x số tháng gửi.
+
+                   if (sothanggui){
+                       laisuathangthang = sotiengui * laisuat/100 / 12*sothanggui;
+
+                   }alert( laisuathangthang +" VND" );
+                    document.getElementById("result").innerText = laisuathangthang + " VND";
+
+
+            }
+
+        </script>
+</body>
+</html>

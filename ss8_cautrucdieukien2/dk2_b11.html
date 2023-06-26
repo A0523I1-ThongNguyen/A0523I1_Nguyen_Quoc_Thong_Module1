@@ -5,14 +5,33 @@
     <title>Title</title>
 </head>
 <body>
-        <input placeholder="Nhap tien luon" id ="tienluong">
+        <input placeholder="Nhập tiền lương" id ="tienluong">
         <button onclick="add()">Check</button>
         <p>Result: <span id="result"></span></p>
 
         <script>
+            function add() {
+                tienluong = document.getElementById("tienluong").value;
+                let thuethunhap = 0;
 
-           tienluong = document.getElementById("tienluong").value;
-            let thuethunhap;
+                if (tienluong <= 5000000) {
+                    thuethunhap = tienluong * 5 / 100;
+                } else if (tienluong <= 10000000) {
+                    thuethunhap = tienluong * 10 / 100;
+                } else if (tienluong <= 18000000) {
+                    thuethunhap = tienluong * 15 / 100;
+                } else if (tienluong <= 32000000) {
+                    thuethunhap = tienluong * 20 / 100;
+                } else if (tienluong <= 52000000) {
+                    thuethunhap = tienluong * 25 / 100;
+                } else if (tienluong <= 80000000) {
+                    thuethunhap = tienluong * 30 / 100;
+                } else if (tienluong > 80000000) {
+                    thuethunhap = tienluong * 35 / 100;
+                }
+                alert(thuethunhap +" VND");
+                document.getElementById("result").innerText = thuethunhap + " VND";
+            }
 
         </script>
 
