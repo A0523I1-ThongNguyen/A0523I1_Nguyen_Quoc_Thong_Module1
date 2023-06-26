@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <input placeholder="number 1" id="number1">
+        <input placeholder="number 2" id="number2">
+        <input placeholder="number 3" id="number3">
+        <button onclick="add()">Check</button>
+        <p>Result: <span id="result"></span></p>
+
+
+        <script>
+            function add() {
+                a = +document.getElementById("number1").value;
+                b = +document.getElementById("number2").value;
+                c = +document.getElementById("number3").value;
+
+                if (a>0 && b>0 && c>0) {
+                    if (a + b > c || b + c > a || a + c > b) {
+                        alert("ba số thực "+a + " " +b+ " " + c +" là cạnh của một tam giác");
+                        document.getElementById("result").innerText =  "ba số thực "+a + " " +b+ " " + c +" là cạnh của một tam giác";
+                    } else {
+                        alert("ba số thực "+a + " " +b+ " " + c +" Không phải là cạnh của một tam giác");
+                        document.getElementById("result").innerText =  "ba số thực "+a + " " +b+ " " + c +" Không phải là cạnh của một tam giác";
+
+                    }
+                } else {
+                    alert("ba số thực "+a + " " +b+ " " + c +" Không phải là cạnh của một tam giác");
+                    document.getElementById("result").innerText =  "ba số thực "+a + " " +b+ " " + c +" Không phải là cạnh của một tam giác";
+
+                }
+
+            }
+
+        </script>
+</body>
+</html>

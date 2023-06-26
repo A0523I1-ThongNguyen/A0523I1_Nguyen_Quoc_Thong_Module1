@@ -47,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss8_cautrucdieukien2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,6 +107,7 @@
       <workItem from="1687523246980" duration="27000" />
       <workItem from="1687583800555" duration="2284000" />
       <workItem from="1687593791443" duration="2398000" />
+      <workItem from="1687664380073" duration="26000" />
     </task>
     <servers />
   </component>
@@ -134,10 +135,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="542" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1687171188737" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1687593557489">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1687664403788">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687593557489" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687664403788" />
     <state x="425" y="185" key="run.anything.popup" timestamp="1687176313945">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

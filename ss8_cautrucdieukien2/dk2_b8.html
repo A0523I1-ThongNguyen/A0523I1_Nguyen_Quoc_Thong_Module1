@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <input placeholder="enter age" id="age">
+        <button onclick="add()">Check</button>
+        <p>Result: <span id="result"></span></p>
+
+        <script>
+
+            function add() {
+
+                age = document.getElementById("age").value;
+
+                if (age < 120 && age > 0) {
+                    alert(age + " Là tuổi của một người");
+                    document.getElementById("result").innerText = age + " Là tuổi của một người";
+                } else {
+                    alert(age + " Không phải là tuổi của một người")
+                    document.getElementById("result").innerText = age + " Không phải là tuổi của một người";
+
+                }
+            }
+
+        </script>
+</body>
+</html>

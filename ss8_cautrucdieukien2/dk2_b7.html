@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input placeholder="nhập a" id="a">
+    <input placeholder="nhập b" id="b">
+    <input placeholder="nhap c" id="c">
+    <button onclick="add()">Tinh</button>
+    <p> Result: <span id="result"></span></p>
+
+    <script>
+
+        function add() {
+            a = document.getElementById("a").value;
+            b = document.getElementById("b").value;
+            c = document.getElementById("c").value;
+            let delta = b * b - 4 * a * c;
+
+            if (a == 0) {
+                let x = -(c / b);
+                if (b == 0) {
+                    if (c == 0) {
+                        alert("Phuong trinh vo so nghiem")
+                    } else {
+                        alert("Phuong trinh vo nghiem")
+                    }
+                } else {
+                    alert("nghiem x" + x);
+                }
+            }else{
+                 if (delta<0){
+                alert("phuong trinh vo nghiem")
+            }else if (delta==0){
+                let x = b / (2*a)
+                alert("Nghiem kep" + x)
+            }else{
+                let x1 = (-b+Math+.abs(delta))/(2*a);
+                let x1 = (-b+Math-.abs(delta))/(2*a);
+                alert("2 nghiem :" +x1 + " " + x2);
+            }
+        }
+            }
+
+
+    </script>
+</body>
+</html>

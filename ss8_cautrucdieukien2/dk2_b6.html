@@ -5,6 +5,34 @@
     <title>Title</title>
 </head>
 <body>
+        <input placeholder="nhập a" id="a">
+        <input placeholder="nhập b" id="b">
+        <button onclick="add()">Tinh</button>
+        <p> Result: <span id="result"></span></p>
 
+        <script>
+
+            function add() {
+
+                a = document.getElementById("a").value;
+                b = document.getElementById("b").value;
+
+                let x = -b / a;
+
+                if (a == 0) {
+                    if (b == 0) {
+                        alert("Phương trình vô số nghiệm")
+                        document.getElementById("result").innerText = "Phương trình vô số nghiệm";
+                    } else if (b != 0) {
+                        alert("Phương trình vô nghiệm")
+                        document.getElementById("result").innerText = "Phương trình vô nghiệm";
+                    }
+                } else {
+                    alert(x)
+                }
+                document.getElementById("result").innerText ="Nghiêm x là : "+ x;
+
+            }
+        </script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <input placeholder="nhap so kWh" id="kwh">
+    <button onclick="add()">Check</button>
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+
+        function add() {
+
+            kwh = document.getElementById("kwh").value;
+            tongtien = 0;
+
+            if (kwh <= 50 ) {
+                tongtien = kwh * 1.678;
+            } else if (kwh <=100) {
+                tongtien = 50 * 1.678 + (kwh - 50) * 1.734;
+            }else if( kwh <=200){
+                tongtien = 50 * 1.678 + 100 * 1.734 + (kwh - 100 ) * 2.014;
+            }else if(kwh <=300){
+                tongtien = 50 * 1.678 + 100 * 1.734 + 200 * 2.014 + (kwh -200) * 2.536;
+            }else if (kwh <= 400){
+                tongtien = 50 * 1.678 + 100 * 1.734 + 200 * 2.014 + 300 *2.536 + (kwh - 300) * 2.834;
+            }else if (kwh > 401 ){
+                tongtien = 50 * 1.678 + 100 * 1.734 + 200 * 2.014 + 300 * 2.536 + 400 * 2.834 + (kwh - 400) * 2.927;
+            }else {
+                ("So kwh phai la so duong")
+            }
+            alert(tongtien + " VND");
+            document.getElementById("result").innerText = tongtien + " VND";
+        }
+
+    </script>
+
+</body>
+</html>
