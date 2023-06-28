@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 07</title>
+</head>
+<body>
+ <p id="result"> Result</p>
+
+<script>
+    for ( let i = 1;i <= 100 ; i++){
+        if (i % 3 == 0 && i % 5 ==0){
+            document.write("FizzBuzz </br>")
+        }else if(i % 3 ==0){
+            document.write("Fizz</br>")
+        }else if(i % 5 ==0) {
+            document.write("Buzz</br>")
+        }else {
+            document.write(i + "</br>")
+        }
+    }
+    document.write("--------------------------------------------------------- </br>")
+    for (let i = 1; i <= 100; i++){
+         let a = i;
+         if (i % 3 ==0){
+             a = "Fizz";
+             if (i % 5 ==0){
+                 a = "FizzBuzz"
+             }
+
+         }else if (i % 5 == 0){
+             a = "Buzz";
+        }document.write(a + "</br>")
+       // document.getElementById("result").innerText = a;
+    }
+</script>
+</body>
+</html>

@@ -19,7 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29d976e9-ec75-422f-a90e-5b692cd84652" name="Default Changelist" comment="" />
+    <list default="true" id="29d976e9-ec75-422f-a90e-5b692cd84652" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ss12_mang/.idea/ss12_mang.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss12_mang/mang1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/sinhbangcuuchuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1+b8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1_b7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl_b4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl_b5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl_b6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_cautrucdieukien2/dk2_b7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1_b1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1_b1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1_b2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1_b2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1_b3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cautrucvonglap1/vl1_b3.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss8_cautrucdieukien2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss9_cautrucvonglap1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,6 +122,8 @@
       <workItem from="1687583800555" duration="2284000" />
       <workItem from="1687593791443" duration="2398000" />
       <workItem from="1687664380073" duration="26000" />
+      <workItem from="1687920790029" duration="612000" />
+      <workItem from="1687944336406" duration="109000" />
     </task>
     <servers />
   </component>
@@ -135,10 +151,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="542" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1687171188737" />
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1687664403788">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1687944444439">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687664403788" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687944444439" />
     <state x="425" y="185" key="run.anything.popup" timestamp="1687176313945">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

@@ -7,25 +7,20 @@
     <body>
             <script>
 
-                let nhietdo = prompt("Nhap nhiet do hien tai")
+                do {
+                    let nhietdo = +prompt("Nhập nhiệt độ ");
 
-                while (nhietdo > 100){
-                    let nhietdo = prompt("Nhap nhiet do hien tai")
-                    let vuot  = alert("Hay giam nhiet do")
-                    if (nhietdo < 20){
-                        alert("Hay tang nhiet do")
+                    if (nhietdo > 100){
+                        alert("Giảm nhiệt độ");
+                    }else if (nhietdo <20){
+                        alert("Tăng nhiệt độ");
+                    }else {
+                        document.write(nhietdo + " độ C");
+                        break;
                     }
-                }
 
-                // let money = 10;
-                // while (money > 0){
-                //     let product = prompt("Bôn muốn mua gì ?");
-                //     let price = +prompt("Nhập giá sản phẩm: ")
-                //     if(price <= money){
-                //         money = money - price;
-                //         document.write("Bôn đã mua thành công "+product + " với giá tiền: " + price + "</br>")
-                //     }
-                // }
+                }while (true)
+
             </script>
     </body>
     </html>
