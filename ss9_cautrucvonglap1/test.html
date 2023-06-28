@@ -5,21 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+    <p id="result"></p>
+ <script>
 
-        <script>
+        let a = 0;
+        let b = 1;
+        let fibo;
+        let sum = 0;
 
-            let a = 0;
-            let b = 1;
-            let fibo;
+        for (i = 2; i<=20; i++){
+            document.write(a + "</br>")
+            fibo = a + b ;
+            a = b;
+            b = fibo
+            sum = sum + a;
+        }document.write(a)
+        document.write("</br>"+ sum)
+     document.getElementById("result").innerText = sum ;
 
-            for(let i = 2; i <= 20; i++){
-                document.write(a + "</br>")
-                let fibo = a +b ;
-                a = b ;
-                b = fibo
-            }document.write(a)
-
-        </script>
+ </script>
 
 </body>
 </html>

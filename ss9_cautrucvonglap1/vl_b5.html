@@ -5,7 +5,7 @@
     <title>bai 01</title>
 </head>
 <body>
-<p>Result: <span id="fibo"></span></p>
+        <p>Result: <span id="fibo"></span></p>
 <script>
 
 
@@ -19,13 +19,13 @@
         fibo = a +b ;
         a = b ;
         b = fibo
-
         sum = sum + a;
     }document.write(a)
-    document.write("</br> Tổng 20 số đầu tiên trong dãy fibonacci là " + sum)
+    document.write("</br> Tổng 20 số đầu tiên trong dãy fibonacci là :" + sum)
 
-    document.getElementById("result").innerText = sum;
+    document.getElementById("fibo").innerText = "Tổng 20 số đầu tiên trong dãy fibonacci là :" + sum;
 
 </script>
+
 </body>
 </html>
