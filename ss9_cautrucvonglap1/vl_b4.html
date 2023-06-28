@@ -2,38 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>bai 01</title>
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
 <script>
 
-    document.write("Day Fibo : </br> ")
-    let n1 = 0  ;
-    let n2 = 1;
+    let a = 0;
+    let b = 1;
     let fibo;
 
-    for (i = 1 ; i <= 20; i++){
-
-        fibo = n1 + n2 ;
-        n1 = n2;
-        n2 = fibo;
-        if (n1 % 5 ==0) {
-            document.write("Số đầu tiên của dãy fibonacci chia hết cho 5 : " + n1)
+    for(let i = 2; i <= 20; i++){
+        document.write(a + "</br>")
+        fibo = a +b ;
+        a = b ;
+        b = fibo;
+        if (a % 5 ==0){
+            document.write("Số đầu tiên trong dãy fibonacci chia hết cho 5 là :"+a + "</br>"  );
             break;
-
         }
 
-    }
+    }document.write(a)
+
 
 </script>
-
 </body>
 </html>
