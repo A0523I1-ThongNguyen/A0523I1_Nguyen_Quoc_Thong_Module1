@@ -5,20 +5,24 @@
     <title>bai 01</title>
 </head>
 <body>
-<diV id="fibonacci"></diV>
 <script>
 
+    document.write("20 số đầu tiên của dãy Fibonacci: </br>")
 
     let a = 0;
     let b = 1;
     let fibo;
+    let sum = 0;
 
     for(let i = 2; i <= 20; i++){
         document.write(a + "</br>")
-        let fibo = a +b ;
+        fibo = a +b ;
         a = b ;
         b = fibo
+
+        sum = sum + a;
     }document.write(a)
+
 
 </script>
 </body>
