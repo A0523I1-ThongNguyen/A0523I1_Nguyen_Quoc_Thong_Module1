@@ -1,27 +1,27 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-    <body>
-            <script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
 
-                do {
-                    let nhietdo = +prompt("Nhập nhiệt độ ");
+    do {
+        let nhietdo = +prompt("Nhập nhiệt độ ");
 
-                    if (nhietdo > 100){
-                        alert("Giảm nhiệt độ");
-                    }else if (nhietdo <20){
-                        alert("Tăng nhiệt độ");
-                    }else {
-                        document.write(nhietdo + " độ C");
-                        break;
-                    }
+        if (nhietdo > 100) {
+            alert("Giảm nhiệt độ");
+        } else if (nhietdo < 20) {
+            alert("Tăng nhiệt độ");
+        } else {
+            document.write(nhietdo + " độ C");
+            break;
+        }
 
-                }while (true)
+    } while (true)
 
-            </script>
-    </body>
-    </html>
+</script>
+</body>
+</html>
 
