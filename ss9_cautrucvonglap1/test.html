@@ -7,14 +7,60 @@
 <body>
 <script>
 
-    for (let i = 1 ; i <= 2 ; i ++){
-        for(let j = 1 ; j <= 10; j++)
+    for (let i = 1 ; i <= 5 ; i ++){
+        for(let j = 1 ; j <= i; j++)
             document.write("in ra : " + i * j + "</br>")
     }
 
 
 
 
+</script>
+
+</body>
+</html>
+let h = +prompt("Nhap so")
+for (let i = 1; i <= h; i++) {
+for (let j = 1; j <= i; j++) {
+document.write("* ");
+}
+document.write("</br>");
+}
+
+
+for (let i = h; i >= 1; i--) {
+for (let j = 1; j <= i; j++) {
+document.write("* ");
+}
+document.write("</br>");
+}
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị N số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let number= +prompt("Nhập number(số SNT muốn hiển thị:");
+    let count=0;
+    let N=2;
+    document.write(number+ "số Nguyên tố đầu tiên là: <br>" );
+    while (count<=number){
+        let flag=true;
+        for (let i = 2; i <= N - 1; i++) {
+            if (N % i == 0) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag == true) {
+            document.write(N+ "<br>");
+        }
+        count++;
+        N++;
+    }
 </script>
 
 </body>

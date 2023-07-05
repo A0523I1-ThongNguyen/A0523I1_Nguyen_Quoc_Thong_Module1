@@ -6,9 +6,9 @@
 </head>
 <body>
 <input placeholder="Số tiền gửi" id="sotiengui">
-<input placeholder="Lãi uất" id="laisuat">
+<input placeholder="Lãi suất (%)" id="laisuat">
 <input placeholder="Số tháng gửi" id="sothanggui">
-<button onclick="add()">Tien Lai</button>
+<button onclick="add()">Tính</button>
 <p>Tiền lãi hàng tháng của bạn là : <span id="result"></span> </p>
 
 
@@ -22,7 +22,7 @@
         let laisuathangthang ;
 
         //Số tiền lãi theo tháng = Số tiền gửi x lãi suất (%năm)/12 x số tháng gửi.
-        for (i = 0 ; i <=sothanggui ; i++) {
+        for (i = 0 ; i <= sothanggui ; i++) {
             if (sothanggui) {
                 laisuathangthang = sotiengui * laisuat / 100 / 12 * sothanggui;
 
