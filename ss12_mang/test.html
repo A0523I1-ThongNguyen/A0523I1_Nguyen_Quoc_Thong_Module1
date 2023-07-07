@@ -3,54 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body {padding-top:50px}
+    </style>
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bai 02</title>
-</head>
-<body>
-<script>
-    var numbers=[1,4,0,-5,7,-100,5000,40000,6,10];
-    var index=0;
-    var max=numbers[0];
-    for(var i=1;i<numbers.length;i++){
-        if(numbers[i]>max){
-            max=numbers[i];
-            index=i;
+
+     <input type="text" id="textValue">
+    <button onclick="add()">ADD</button>
+    <button onclick="show()">SHOW</button>
+    <div id="result"></div>
+
+    <script>
+
+        let x = 0;
+        let array = Array();
+
+        function add() {
+            array[x] = document.getElementById("textValue").value;
+            alert("phan tu "+ array[x] + " duoc them vao index "+x);
+            x++;
+            document.getElementById("textValue").value = "";
         }
-    }
-    document.write("Phần từ lớn nhất là:"+max+"</br>");
-    document.write("Vị trí phần từ lớn nhất là:"+index);
-</script>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bai 03</title>
-</head>
-<body>
-<script>
-    var numbers=[10,1,2,9,8,6,10000,-5,-9000,0];
-    var max=numbers[0];
-    var sum=0;
-    for(var i=1;i<numbers.length;i++){
-        sum=sum+numbers[i];
-        if(numbers[i]>max){
-            max=numbers[i];
+
+        function show() {
+            let show = "";
+            for (let i = 0; i < array.length ; i++){
+                show += "phan tu thu " + i + " = " + array[i] + "<br/>";
+            }
+            document.getElementById("result").innerHTML = show;
         }
-    }
-    var average=sum/(numbers.length);
-    document.write("Phần tử lớn nhất là:"+max+"</br>");
-    document.write("Gias trị trung bình của mảng:"+average);
-</script>
-</body>
-</html>
+
+    </script>
 
 </body>
 </html>
-
-</body>
-</html>
+document.write("2 số >= 10 trong mảng là " + ok + "</br>")
