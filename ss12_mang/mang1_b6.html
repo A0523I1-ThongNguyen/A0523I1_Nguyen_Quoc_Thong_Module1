@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kiếm</title>
+</head>
+<body>
+<script>
+
+    let array = Array(10);
+    let v;
+    let flag = false;
+    let vitri = 0;
+
+    for (i = 0; i < 10; i++) {
+        array[i] = +prompt("Array [" + i + "] =");
+    }
+    v = +prompt("Nhap so muon tim");
+    for (j = 0; j < 10; j++) {
+        if (array[j] == v) {
+            flag == true;
+            vitri = j;
+        }
+    }
+    if (flag==true) {
+        document.write("Phan tu " + v + " Xuat hien o vi tri" + vitri)
+    } else {
+        document.write("Phan tu " + v + " KHONG co trong mang [" + array + "]")
+    }
+</script>
+</body>
+</html>

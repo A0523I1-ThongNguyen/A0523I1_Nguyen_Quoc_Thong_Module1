@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let count = 0;
+    let array = Array();
+    let nhapso = +prompt("Nhập số phần tử mảng: ");
+
+    for (let i = 0; i < nhapso; i++) {
+        array[i] = +prompt("Nhập phần tử Arr[" + i + "] =");
+        if (array[i] < 0) {
+            count++;
+        }
+    }
+    document.write("Các phần tử vừa nhập : " + array + "</br>");
+    document.write("Có " + count + " Số nguyên âm trong mảng")
+
+</script>
+
+</body>
+</html>
+
+

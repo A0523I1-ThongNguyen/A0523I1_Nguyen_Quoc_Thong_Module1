@@ -8,19 +8,18 @@
 <script>
 
    let array = new Array();
-   let max = 0 ;
-   let vitri = 0 ;
-   let nhapso = +prompt("Nhập số phần tử mảng muốn in:");
+   let max = 0;
+   let vitri = 0;
+   let nhapso = prompt("nhap so phan tu mang muon in");
 
-   for (let i = 0; i <nhapso; i++){
-       array[i] = +prompt("Nhập phần  Array ["+i + "] =");
-       if(array[i] > max){
+   for (let i = 0; i< nhapso;i++){
+       array[i] = +prompt("Array [" + i + "] =");
+       if (array[i] > max ){
            max = array[i];
            vitri = i;
        }
-   }document.write(array +"</br>")
-   document.write("Số lớn nhất trong mảng là : " +max + "</br>");
-   document.write("Vị trí số lớn nhất trong mảng là : " +vitri)
+   }document.write(max)
+    document.write("vi tri" +vitri\)
 
 </script>
 </body>

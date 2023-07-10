@@ -3,39 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        body {padding-top:50px}
-    </style>
 </head>
 <body>
-
-     <input type="text" id="textValue">
-    <button onclick="add()">ADD</button>
-    <button onclick="show()">SHOW</button>
-    <div id="result"></div>
-
-    <script>
-
-        let x = 0;
-        let array = Array();
-
-        function add() {
-            array[x] = document.getElementById("textValue").value;
-            alert("phan tu "+ array[x] + " duoc them vao index "+x);
-            x++;
-            document.getElementById("textValue").value = "";
+<script>
+    let a = new Array();
+    let b;
+    let local = -1
+    let check = false
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("Nhập Arr["+i+"] :")
+    }
+    document.write("Arr["+a+"]<br>")
+    b = +prompt("Nhập số muốn tìm")
+    for (let i = 0; i < 10; i++) {
+        if (a[i]==b){
+            check = true
+            local = i + 1
         }
-
-        function show() {
-            let show = "";
-            for (let i = 0; i < array.length ; i++){
-                show += "phan tu thu " + i + " = " + array[i] + "<br/>";
-            }
-            document.getElementById("result").innerHTML = show;
-        }
-
-    </script>
-
+    }
+    if (check){
+        document.write(b+" in Arr["+local+"]")
+    }else {
+        document.write(b+" not in Arr["+a+"]")
+    }
+</script>
 </body>
 </html>
-document.write("2 số >= 10 trong mảng là " + ok + "</br>")
