@@ -12,21 +12,25 @@
 
     let array = [1,2,3,4,5,6,7,8,9,10]
     flag = false;
-    let v = +prompt("Nhap phan tu can tim")
+    let v = +prompt("Nhập phần tử cần tìm")
     for (let i = 0; i < array.length ; i++) {
         if (array[i] == v){
             array.splice(i,1)
             flag == true;
+            document.write("Phần tử mảng đã xóa :" + array)
             break;
         }
 
     }
-    if(flag == false){
-        document.write("So "+ v + " Khong nam trong mang")
-    }else {
-        document.write("Phan tu mang da xoa :" + array)
+
+    if(!flag){
+        document.write("Số "+ v + " Không nằm trong mảng")
     }
+
+
+
 
 </script>
 </body>
 </html>
+

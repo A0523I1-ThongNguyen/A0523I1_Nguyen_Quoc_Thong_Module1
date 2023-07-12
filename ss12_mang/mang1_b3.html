@@ -6,30 +6,30 @@
 </head>
 <body>
 
-    <script>
+<script>
 
-        let numbers = new Array();
-        let max = 0;
-        let sum = 0;
-        let avg = 0;
-        let nhapso = +prompt("Nhap so mang muon in: ");
+    let numbers = new Array();
+    let max = 0;
+    let sum = 0;
+    let avg = 0;
+    let nhapSo = +prompt("Nhập số phần tử mảng muốn in : ");
 
-        for (let i = 0; i <nhapso; i++){
-            numbers[i] = +prompt("nhap Array[" + i + "] =");
-            sum = sum +numbers[i]
-            if (numbers[i] > max){
-                max = numbers[i];
-
-            }
+    for (let i = 0; i < nhapSo; i++) {
+        numbers[i] = +prompt("nhap Array[" + i + "] =");
+        sum = sum + numbers[i]
+        if (numbers[i] > max) {
+            max = numbers[i];
 
         }
-        document.write(numbers)
-        avg = sum /(numbers.length)
-        document.write("So lon nhat la :" +max);
-        document.write("trung binh cong la : " +avg)
+
+    }
+    document.write(numbers + "</br>")
+    avg = sum / (numbers.length)
+    document.write("So lon nhat la :" + max + "</br>");
+    document.write("trung binh cong la : " + avg + "</br>")
 
 
-    </script>
+</script>
 
 </body>
 </html>

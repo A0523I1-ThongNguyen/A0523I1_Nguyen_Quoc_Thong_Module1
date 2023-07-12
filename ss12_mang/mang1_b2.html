@@ -7,19 +7,20 @@
 <body>
 <script>
 
-   let array = new Array();
-   let max = 0;
-   let vitri = 0;
-   let nhapso = prompt("nhap so phan tu mang muon in");
+    let array = new Array();
+    let max = -Infinity;
+    let viTri = 0;
+    let nhapSo = prompt("Nhập số phần tử mảng muốn in ");
 
-   for (let i = 0; i< nhapso;i++){
-       array[i] = +prompt("Array [" + i + "] =");
-       if (array[i] > max ){
-           max = array[i];
-           vitri = i;
-       }
-   }document.write(max)
-    document.write("vi tri" +vitri\)
+    for (let i = 0; i < nhapSo; i++) {
+        array[i] = +prompt("Array [" + i + "] =");
+        if (array[i] > max) {
+            max = array[i];
+            viTri = i;
+        }
+    }
+    document.write("số lớn nhất " + max)
+    document.write("Ở vị trí " + viTri)
 
 </script>
 </body>

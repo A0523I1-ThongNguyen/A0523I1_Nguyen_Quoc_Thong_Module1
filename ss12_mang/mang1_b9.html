@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let a = Array(10);
+    let b = Array(10);
+
+
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("Nhap cac phan tu a[" + i + "] ")
+    }
+
+
+    for (let i = 0; i < 10; i++) {
+        b[i] = +prompt("Nhap cac phan tu b[" + i + "] ")
+    }
+
+
+    // let c = Array(a.concat(b));
+    let c = a.concat(b);
+    document.write(b + "</br>");
+    document.write(a + "</br>");
+    document.write("Gop 2 mang vao C : " + c)
+
+
+</script>
+
+</body>
+</html>

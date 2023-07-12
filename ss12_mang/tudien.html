@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Title</title>
+        </head>
+<body>
+<script>
+   let arrayViet = ["con chó", "xe hơi", "bản đồ", "máy tính"]
+   let arrayEnglish = ["dog", "car" , "map", "computer"]
+   let key = prompt("Nhập từ tiếng Việt ");
+   flag = false;
+
+   for (let i = 0 ; i < arrayViet.length; i++){
+       if(arrayViet[i] == key) {
+           document.write(arrayViet[i] + " > Translate > " + arrayEnglish[i]);
+           flag=true;
+           break;
+       }
+   }
+   if(flag == false){
+       document.write( key + " : Không có trong từ điển")
+   }
+
+</script>
+</body>
+</html>

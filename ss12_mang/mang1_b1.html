@@ -7,25 +7,23 @@
 <body>
 <script>
 
- let number = new Array();
- let count = 0;
- let sum = 0;
- let nhapso = +prompt("Nhập vào số phần tử mảng muốn in : ")
+    let number = new Array();
+    let count = 0;
+    let sum = 0;
+    let nhapSo = +prompt("Nhập vào số phần tử mảng muốn in : ")
 
-    for (i = 0 ; i <nhapso;i++){
-        number[i] = +prompt("Nhập vào phần tử Array ["+ i + "]");
-        if (number[i] >= 10){
+    for (i = 0; i < nhapSo; i++) {
+        number[i] = +prompt("Nhập vào phần tử Array [" + i + "]");
+        if (number[i] >= 10) {
 
-            document.write("Số >= 10  : "+number[i] + "</br>")
+            document.write("Số >= 10  : " + number[i] + "</br>")
             sum = sum + number[i];
             count++;
         }
-    }document.write("Các phần tử vừa nhập : "+number + "</br>")
+    }
+    document.write("Các phần tử vừa nhập : " + number + "</br>")
     document.write("Tổng các số >= 10 là " + sum + "</br>")
-    document.write("có "+ count +" số >=10" + "</br>")
-
-
-
+    document.write("có " + count + " số >=10" + "</br>")
 
 
 </script>
