@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Nguyen To</title>
+</head>
+<body>
+<script>
+
+    let numbers = +prompt("Nhap so luong so nguyen to can in")
+    count = 0;
+    check = 2;
+
+    while (count < numbers){
+        flag = true;
+        for (let i = 2 ; i < Math.sqrt(check); i++){
+            if (check % i == 0){
+                flag = false;
+                break;
+            }
+        }
+        if(flag) {
+            document.write(check + "</br>");
+            count++;
+        }
+        check ++;
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 07</title>
+</head>
+<body>
+<script>
+    let nhapSo = +prompt("Nhap so")
+    let numbers= Array(nhapSo)
+    for (let i = 0 ; i < numbers.length ;i++) {
+        numbers[i] = +prompt("array["+i+"]")
+    }
+    let v = parseInt(prompt("Nhập vào phần tử V"));
+    for (let j = 0 ; j <numbers.length;j++){
+
+        if (numbers.includes(v)) {
+            numbers.splice(numbers.indexOf(v), 1);
+            document.write("Mảng đã xóa là:"+numbers);
+            break;
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

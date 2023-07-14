@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="input1" placeholder="feet">
+<input type="text" id="input2" placeholder="meters">
+
+<button onclick="add()">Chuyen Doi</button>
+<span id="result1"></span>
+<span id="result2"></span>
+<body>
+
+<script>
+
+    function feetTometers(feet) {
+        return meters =  0.305 * feet;
+    }
+
+    function metersTofeet(meters) {
+        return feet = 3.280 * meters
+    }
+
+    function add() {
+        let feet = document.getElementById("input1").value;
+        let meters = document.getElementById("input2").value;
+        let result1 = feetTometers(feet)
+        let result2 = metersTofeet(meters)
+        document.getElementById("result1").innerText = result1 + " meters"
+        document.getElementById("result2").innerText = result2 + " feet"
+
+
+    }
+</script>
+
+</body>
+</html>
