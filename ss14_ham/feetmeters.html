@@ -15,7 +15,7 @@
 <script>
 
     function feetTometers(feet) {
-        return meters =  0.305 * feet;
+        return meters = 0.305 * feet;
     }
 
     function metersTofeet(meters) {
@@ -27,10 +27,12 @@
         let meters = document.getElementById("input2").value;
         let result1 = feetTometers(feet)
         let result2 = metersTofeet(meters)
-        document.getElementById("result1").innerText = result1 + " meters"
-        document.getElementById("result2").innerText = result2 + " feet"
-
-
+        if (feet == 0) {
+            document.getElementById("result2").innerText = result2 + " feet"
+        } else {
+            document.getElementById("result1").innerText = result1 + " meters"
+        }
+        
     }
 </script>
 
