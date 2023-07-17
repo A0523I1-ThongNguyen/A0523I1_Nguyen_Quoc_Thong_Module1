@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    const pi = 3.14;
+    let r = +prompt("Nhap ban kinh ")
+    document.write("Chu vi = " + chuVi(r) + "</br>")
+    document.write("Dien Tich =" + dienTich(r))
+
+    function chuVi(cv) {
+        let c = (r * 2) * pi;
+        return c;
+
+    }
+
+    function dienTich(dt) {
+        let s = (r * r) * pi;
+        return s;
+    }
+
+    /* Goi ham cach 2
+
+     let resultcv = chuVi(r)
+       document.write("Chu vi : "+ resultcv+"</br>")
+     let resultdt = dienTich(r)
+       document.write("dientich : " +resultdt) */
+
+</script>
+
+</body>
+</html>

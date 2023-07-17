@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+<script>
+    // if else ngoai function
+    array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    let flag = false;
+
+    function nhanThamSo(stars) {
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] === stars) {
+                flag = true;
+                return array2[i];
+            }
+        }
+    }
+
+    let nhapTenSao = prompt("Nhập tên ngôi sao :")
+    let result = nhanThamSo(nhapTenSao);
+    if (flag == true) {
+        alert(nhapTenSao + " thuộc chòm sao " + result)
+    } else if (flag == false) {
+        alert("Không tìm thấy ngôi sao nào")
+    }
+
+    // if else trong function
+
+    /*  array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    let flag = false;
+
+    function nhanThamSo(stars) {
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] === stars) {
+                flag = true;
+                alert(array2[i]);
+            }
+        }
+        if (flag == true) {
+            alert(stars + " thuộc chòm sao " + array2[i])
+        } else if (flag == false) {
+            alert("Không tìm thấy ngôi sao nào")
+        }
+    }
+
+    let nhapTenSao = prompt("Nhập tên ngôi sao :")
+    nhanThamSo(nhapTenSao) */
+
+</script>
+
+</body>
+</html>
+
+
+

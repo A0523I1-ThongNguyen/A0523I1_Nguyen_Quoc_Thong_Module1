@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    function soSanh(a, b) {
+        if (a > b) {
+            alert("So " + a + " LON hon so " + b)
+        } else if (a < b || a == b) {
+            let c = a + b;
+            return c;
+        }
+    }
+
+    let goiHamSoSanh = soSanh(6, 2);
+    document.write(goiHamSoSanh);
+
+    //Cach 2
+    let n1 = +prompt("Nhap num1");
+    let n2 = +prompt("Nhap num2");
+    soSanh(n1, n2)
+    //let result  = soSanh(n1,n2)
+    //  document.write(result)
+
+
+</script>
+
+</body>
+</html>

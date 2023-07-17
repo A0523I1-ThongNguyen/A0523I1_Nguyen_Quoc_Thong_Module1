@@ -2,17 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>start</title>
+    <title>Bài 5</title>
 </head>
 <body>
 <script>
-    nhapSo = prompt("Nhap ki tu ")
-    count = 0
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa_Major", "Leo"];
+    let key = prompt("Nhập keyword:");
+    checkStar(key);
 
-    for (let i = 0 ; i <array.length ; i++){
-        count++
-    }document.write(count)
+    function checkStar(str) {
+        let index = 0;
+        let flag = false;
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == str) {
+                index = i;
+                flag = true;
+                break;
+            } else index = -1;
+        }
+        if (index == -1) {
+            document.write("Không tìm thấy key word")
+        } else if (flag == true) {
+            document.write(arr2[index]);
+        }
 
+    }
 </script>
+
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+
+<script>
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+

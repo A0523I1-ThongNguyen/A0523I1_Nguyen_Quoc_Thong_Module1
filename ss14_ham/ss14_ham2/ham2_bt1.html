@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<input type="text" placeholder="Nhap so" id="input">
+<button onclick="add()">Tinh binh phuong</button>
+<p id="result"></p>
+
+<script>
+
+
+    function add() {
+        let a = document.getElementById("input").value;
+        let b = a * a;
+        document.getElementById("result").innerText = "Bình phương của " + a + " là " + b;
+    }
+
+    //c2
+    /* let nhapSo = +prompt("Nhập số bất kỳ ");
+    result = binhPhuong(nhapSo);
+    alert("Bình Phương của " + nhapSo + " là:  " + result)
+
+
+    function binhPhuong(number) {
+    let bp = number * number; //Math.pow(number,2);(phương thức trả về số mũ / cơ )
+    return bp;
+    } */
+</script>
+
+
+</body>
+</html>

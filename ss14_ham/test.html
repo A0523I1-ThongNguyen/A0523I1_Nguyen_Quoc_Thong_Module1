@@ -5,18 +5,30 @@
     <title>Title</title>
 </head>
 <body>
-<p id="result"></p>
 <script>
-    let b=parseInt(prompt("enter number"))
-    function alert1(num1) {
-        if (num1 !== "") {
-            num1++;
-            document.getElementById("result").innerHTML = num1
+
+    function isPrime(snt) {
+        let flag = true;
+        if (snt < 2) {
+            flag = false
+        } else {
+            for (let i = 2; i <= Math.sqrt(snt); i++) {
+                if (snt % i === 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (flag == true) {
+            alert("Dung So nguyen to")
+        } else {
+            alert("K phai snt")
         }
     }
-    alert1(b)
+
+    let nhapSo = +prompt("Nhap so")
+    isPrime(nhapSo)
+
 </script>
 </body>
 </html>
-<
-

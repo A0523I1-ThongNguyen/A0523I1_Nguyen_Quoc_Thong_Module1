@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        let nhapSo =+prompt("Nhap ki tu so")
+        result = check(nhapSo)
+        document.write(result)
+
+        function check(number) {
+            flag = true
+            for (let i = 0; i < nhapSo; i++) {
+                if (isNaN(number) === false) {
+                    document.write("Day la ki tu so")
+                   break;
+                }else {
+                    document.write("KHONG phai ki tu so")
+                }
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>
