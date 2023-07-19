@@ -7,19 +7,19 @@
 <body>
 
     <script>
-        let nhapSo =+prompt("Nhap ki tu so")
-        result = check(nhapSo)
-        document.write(result)
-
+        let nhapSo =+prompt("Nhập kí tự")
+        check(nhapSo)
+        // result = check(nhapSo)
+        //  document.write(result)
         function check(number) {
             flag = true
             for (let i = 0; i < nhapSo; i++) {
                 if (isNaN(number) === false) {
-                    document.write("Day la ki tu so")
+                    document.write("True- Đây là kí tự số")
                    break;
-                }else {
-                    document.write("KHONG phai ki tu so")
                 }
+            }if (isNaN(number)=== true) {
+                document.write("False - KHÔNG phải kí tự số")
             }
         }
 

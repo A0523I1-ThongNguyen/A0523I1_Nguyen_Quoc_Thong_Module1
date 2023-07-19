@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
 <script>
 
-    function isPrime(snt) {
-        let flag = true;
-        if (snt < 2) {
-            flag = false
-        } else {
-            for (let i = 2; i <= Math.sqrt(snt); i++) {
-                if (snt % i === 0) {
-                    flag = false;
-                    break;
-                }
-            }
+    function truyenMang(number) {
+        let lengthA = +prompt("Nhap do dai mang");
+        for (i = 0; i < lengthA; i++) {
+            let nhapSo = +prompt("nhap phan tu [" + i + "] ")
+            number.unshift(nhapSo)
+            document.write(nhapSo)
         }
-        if (flag == true) {
-            alert("Dung So nguyen to")
-        } else {
-            alert("K phai snt")
-        }
+        return number;
     }
 
-    let nhapSo = +prompt("Nhap so")
-    isPrime(nhapSo)
+    let array = [];
+    let result = truyenMang(array)
+    document.write("</br>" + result)
+
 
 </script>
 </body>
+
 </html>

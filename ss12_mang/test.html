@@ -2,29 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 5</title>
+    <title>Tìm kiếm trong mảng</title>
 </head>
 <body>
 <script>
-    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
-    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa_Major", "Leo"];
-    let key = prompt("Nhập keyword:");
-    checkStar(key);
+    let n = +prompt("Nhập số phần tử của mảng:");
+    let arr = new Array();
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhap phan tu Arr[" + i + "] =");
+    }
+    let key = prompt("Nhập ký tự cần tìm kiếm:");
+    document.write("Màng: " + arr + "<br>");
+    search(arr)
 
-    function checkStar(str) {
+    function search(array) {
+        let count = 0
         let index = 0;
         let flag = false;
-        for (let i = 0; i < arr1.length; i++) {
-            if (arr1[i] == str) {
-                index = i;
-                flag = true;
-                break;
-            } else index = -1;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == key) {
+                flag = true
+                count++;
+                index=i;
+                document.write(key + " xuất hiện lần " + count + " tại vị trí  "+ index+ "<br>");
+            }
         }
-        if (index == -1) {
-            document.write("Không tìm thấy key word")
-        } else if (flag == true) {
-            document.write(arr2[index]);
+        if (flag == false) {
+            document.write("-1");
         }
 
     }
@@ -32,23 +36,3 @@
 
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bài 5</title>
-</head>
-<body>
-
-<script>
-
-
-
-
-</script>
-
-</body>
-</html>
-
-
-
