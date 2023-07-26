@@ -2,37 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tìm kiếm trong mảng</title>
+    <title>bai 03</title>
 </head>
 <body>
 <script>
-    let n = +prompt("Nhập số phần tử của mảng:");
-    let arr = new Array();
-    for (let i = 0; i < n; i++) {
-        arr[i] = prompt("Nhap phan tu Arr[" + i + "] =");
-    }
-    let key = prompt("Nhập ký tự cần tìm kiếm:");
-    document.write("Màng: " + arr + "<br>");
-    search(arr)
-
-    function search(array) {
-        let count = 0
-        let index = 0;
-        let flag = false;
-        for (let i = 0; i < array.length; i++) {
-            if (array[i] == key) {
-                flag = true
-                count++;
-                index=i;
-                document.write(key + " xuất hiện lần " + count + " tại vị trí  "+ index+ "<br>");
-            }
+    for (let i = 1; i <=5 ; i++) {
+        for (let j = 1; j <=i; j++) {
+            document.write("*");
         }
-        if (flag == false) {
-            document.write("-1");
-        }
-
+        document.write("<br>");
     }
+
 </script>
-
 </body>
 </html>

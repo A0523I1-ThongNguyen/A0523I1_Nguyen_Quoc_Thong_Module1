@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let array1 = prompt("enter")
+    let array2 = prompt("enter")
+    let array = array1.concat(array2);
+    let array3 = []
+    let array4 = []
+
+    for (let i = 0; i <array.length; i++){
+        if(!array3.includes(array[i])){
+            array3.push(array[i])
+        }else {
+            array4.push(array[i])
+        }
+    }
+    document.write(array4.join("-"))
+
+</script>
+
+</body>
+</html>

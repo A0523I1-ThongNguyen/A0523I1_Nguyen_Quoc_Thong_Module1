@@ -9,24 +9,25 @@
 
 
     let arr = new Array();
-    let nhapSo = +prompt("Nhap so luong ki tu")
+    let nhapSo = +prompt("Nhap số phần tử của mảng ")
     for (let i = 0; i < nhapSo; i++) {
-        arr[i] = +prompt("ki tu [" + i + "]")
+        arr[i] = prompt("Nhập phần tử thứ [" + i + "]")
     }
-    let key = +prompt("Nhap ki tu de check")
-    let result = check(key)
-    document.write(result)
+    let key = prompt("Nhập kí tự cần tìm ")
+    document.write("Mảng vừa  : " + arr + "</br>")
+    check(arr)
+
 
     function check(kitu) {
-        flag = false;
+        let flag = false;
         let count = 0;
         let viTri = 0;
         for (let i = 0; i < kitu.length; i++) {
             if (kitu[i] == key) {
                 flag = true
-                viTri = i;
                 count++;
-                document.write(key + " Nam o vi tri thu " + i + " Xuat hien so lan la " + count)
+                viTri = i;
+                document.write(key + " xuất hiện " +count+ " lần" + " - Tại vị trí thứ "+ viTri +"</br>")
             }
         }
         if (flag === false) {

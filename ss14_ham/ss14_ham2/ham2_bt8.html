@@ -10,15 +10,16 @@
     function daoMang(array) {
         let nhapSo = +prompt("nhap so phan tu ")
         for (let i = 0; i < nhapSo; i++) {
-            let nhapPhanTu = +prompt("Phan tu ["+i+"]");
+            let nhapPhanTu = +prompt("Phan tu [" + i + "]");// check phần tử trước khi đưa vô mảng
             array.unshift(nhapPhanTu)
             document.write(nhapPhanTu)
 
         }
         return array;
     }
-   let arrayNguoc = new Array(); // arrayNguoc = []      | tạo mảng rỗng |
-    document.write("</br>"+ "mang da dao nguoc: "+daoMang(arrayNguoc))
+
+    let arrayNguoc = new Array(); // arrayNguoc = []      | tạo mảng rỗng |
+    document.write("</br>" + "mang da dao nguoc: " + daoMang(arrayNguoc))
 
 </script>
 </body>

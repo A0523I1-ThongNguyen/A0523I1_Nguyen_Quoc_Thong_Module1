@@ -133,12 +133,8 @@
     function deleteHV(){
         let delHV = prompt("Nhap ten hoc vien can xoa")
         for (let i = 0 ; i < hocvienArray.length; i++){
-            if (hocvienArray[i].name === delHV){
-                document.getElementById("maHv").value = "";
-                document.getElementById("tenHv").value = "";
-                document.getElementById("lop").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("date").value = "";
+            if (hocvienArray[i].tenHv === delHV){
+                hocvienArray.splice(i,1)
 
             }
         }

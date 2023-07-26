@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+
+
+        let arrayA = prompt()
+        let arrayB = prompt()
+        arrayRong = [];
+
+        for (let i = 0; i < arrayB.length; i++) {
+            if (arrayA.indexOf(arrayB[i]) === -1 && arrayRong.indexOf(arrayB[i]) === -1) {
+                arrayRong.push(arrayB[i])
+            }
+        }
+        document.write(arrayRong.join(" "))
+
+
+    </script>
+
+</body>
+</html>

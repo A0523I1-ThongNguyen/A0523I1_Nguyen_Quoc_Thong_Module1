@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="hinhChuNhat" width="300" height="150" style="border: 3px solid #0000FF; background-color: #0000FF"></canvas>
+</body>
+
+<script>
+
+    class Hinhchunhat {
+        constructor(length , width) {
+            this.length = length
+            this.width = width
+        }
+
+        chuvi(){
+            return (this.length + this.width) * 2
+        }
+
+        dientich(){
+            return this.length * this.width
+        }
+
+        showInfo(){
+            return  "</br>Chieu dai hinh chu nhat :" + this.length +
+                "</br>Chieu rong hinh chu nhat :" + this.width +
+                "</br> Chu vi hinh chu nhat :" + this.chuvi() +
+                "</br> Dien tich hinh chu nhat :" +this.dientich()
+        }
+
+    }
+
+    let chieudai = +prompt("Nhap chieu dai")
+    let chieurong = +prompt("Nhap chieu rong")
+    let goiHinhChuNhat = new Hinhchunhat(chieudai,chieurong)
+    document.write(goiHinhChuNhat.showInfo())
+
+</script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">C
+    <title>Temperature</title>
+</head>
+<body>
+
+<h1>Chuyển Nhiệt Độ C Sang Độ F & Độ K</h1>
+<hr>
+
+<input id="doC" type="text" placeholder="Nhập độ C">
+
+<br><br>
+<button type="button" onclick="cToF()" style="cursor: pointer;">Chuyển C sang F</button>
+<input id="result1" type="text" placeholder="loading..." style="background-color: pink">
+<br><br>
+<button type="button" onclick="cToK()" style="cursor: pointer;">Chuyển C sang K</button>
+<input id="result2" type="text" placeholder="loading..." style="background-color: pink">
+
+
+<script>
+
+    class NhietDo {
+        constructor(doC) {
+            this.c = doC
+        }
+
+        convertCToF() {
+            return (this.c * 1.8) + 32
+        }
+
+        convertCToK() {
+            return (this.c + 273.15)
+        }
+    }
+
+    function cToF() {
+        let nhapDoC = document.getElementById("doC").value;
+        let cSangF = new NhietDo(nhapDoC)
+        let getCSangF = cSangF.convertCToF()
+        document.getElementById("result1").value = getCSangF
+
+    }
+
+    function cToK() {
+        let nhapDoC = document.getElementById("doC").value;
+        let cSangK = new NhietDo(nhapDoC)
+        let getCSangK = cSangK.convertCToK();
+        document.getElementById("result2").value = getCSangK
+    }
+
+
+</script>
+
+</body>
+</html>

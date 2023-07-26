@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả điện thoại</title>
+</head>
+<body>
+
+<script>
+
+    let phone = function (pin) {
+        this.pin = 100;
+
+        this.on = function () {
+            alert("Phone : ON");
+        }
+
+        this.off = function () {
+            alert("Phone : OFF");
+        }
+
+        this.sac = function () {
+            alert("Dang sac " + this.pin++ + "%");
+        }
+
+        this.messenger = function () {
+            let mess = prompt("Nhap messenger");
+            alert(mess)
+        }
+
+        this.luongpin = function () {
+            alert("Luong pin con lai "+ this.pin-- + "%");
+        }
+
+    };
+
+    let goiPhone = new phone()
+
+    function on() {
+        goiPhone.on();
+    }
+
+    function off() {
+        goiPhone.off();
+    }
+    function sac() {
+        goiPhone.sac();
+    }
+
+    function messenger() {
+        goiPhone.messenger()
+    }
+    function luongpin() {
+        goiPhone.luongpin()
+    }
+
+</script>
+
+<font style="margin-left: 300px; color: red;"> MY PHONE </font>
+
+<button type="button" onclick="off()" style="cursor: pointer;
+
+    background-color: #0000FF;;
+    color: black;
+    padding:  20px 10px;
+    border: none;
+    border-radius: 20px;"> OFF PHONE
+
+</button>
+
+<button type="button" onclick="on()" style="cursor: pointer;
+
+    background-color: #0000FF;
+    color: black;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 20px;"> ON PHONE
+
+</button>
+
+<button type="button" onclick="sac()" style="cursor: pointer;
+    background-color: #0000FF;
+    color: black;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 20px;"> Sac Pin
+
+</button>
+
+<button type="button" onclick="messenger()" style="cursor: pointer;
+         background-color: #0000FF;
+        color: black;
+        padding: 20px 10px;
+        border-radius: 20px;"> Messenger
+
+
+</button>
+
+
+<button type="button" onclick="luongpin()" style="cursor: pointer;
+         background-color: #0000FF;
+        color: black;
+        padding: 20px 10px;
+        border-radius: 20px;"> Luong pin
+
+
+</button>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 03</title>
+</head>
+<body>
+<script>
+    flag = false
+    let kitu = ["u", "e", "o", "a", "i", "U", "E", "O", "A", "I"]
+
+    let nhapkitu = prompt("Nhập kí tự để check")
+    for (let i = 0; i < kitu.length; i++) {
+
+        if (kitu[i] === nhapkitu) {
+            flag = true;
+            document.write(nhapkitu + " Là Nguyên Âm")
+        }
+    }
+    if (flag === false) {
+        document.write(nhapkitu + " Là Phụ Âm")
+    }
+
+</script>
+</body>
+</html>
