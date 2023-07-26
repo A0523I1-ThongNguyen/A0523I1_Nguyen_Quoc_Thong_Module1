@@ -2,75 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menu</title>
+    <title>Bài 2</title>
 </head>
 <body>
+<h3>
+    Vẽ tam giác vuông rỗng có chiều cao h do người dùng nhập vào.
+</h3>
+<hr>
+<br>
 <script>
-    let price;
-    let total;
-    let i;
-    do {
-        let n = +prompt("Hãy chọn menu:\n"
-            +"1. Cafe\n" +
-            "2.Cam vắt\n" +
-            "3.Nước ép cà rốt\n" +
-            "4.Nước ép cà chua\n" +
-            "5.Nước lọc\n" +
-            "6.Nước dừa\n"+
-            "7.Thoát");
-        switch (n) {
-            case 1: {
-                price = 25;
-                i = +prompt("Cafe giá:" + price+"\n"+"Nhập số lượng bạn muốn order:");
-                total = price * i;
-                document.write("Tông tiền bạn phải thanh toán:" +total);
-                break;
+    let h = prompt('Nhập chiều cao');
+    let m = h;
+    let n = h;
+    for (let i = 1; i <= h; i++) {
+        for (let j = 1 ; j <= 2 * h -1 ; j++) {
+            if (j >= m && j <= n) {
+                document.write("*");
+            } else {
+                document.write('&nbsp ');
             }
-            case 2: {
-                price = 35;
-                i = +prompt("Cam vắt giá:" + price+"\n"+"Nhập số lượng bạn muốn order:");
-                total = price * i;
-                document.write("Tông tiền bạn phải thanh toán:" +total);
-                break;
-            }
-
-            case 3: {
-                price = 25;
-                i = +prompt("Nước ép cà rốt giá:" + price+"\n"+"Nhập số lượng bạn muốn order:");
-                total = price * i;
-                document.write("Tông tiền bạn phải thanh toán:" +total);
-                break;
-            }
-            case 4: {
-                price = 20;
-                i = +prompt("Nước ép cà chua giá:" + price+"\n"+"Nhập số lượng bạn muốn order:");
-                total = price * i;
-                document.write("Tông tiền bạn phải thanh toán:" +total);
-                break;
-            }
-            case 5: {
-                price = 10;
-                i = +prompt("Nước lọc giá:" + price+"\n"+"Nhập số lượng bạn muốn order:");
-                total = price * i;
-                document.write("Tông tiền bạn phải thanh toán:" +total);
-                break;
-            }
-            case 6: {
-                price = 35;
-                i = +prompt("Nước dừa giá:" + price+"\n"+"Nhập số lượng bạn muốn order:");
-                total = price * i;
-                document.write("Tông tiền bạn phải thanh toán:" +total);
-                break;
-            }
-
-
-            case 7:
-                break;
-
-        }}
-    while (n <= 7)
-
-
+        }
+        m --;
+        n++;
+        document.write("<br>");
+    }
 </script>
 </body>
 </html>

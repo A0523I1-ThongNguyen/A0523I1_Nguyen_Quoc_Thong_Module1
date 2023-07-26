@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>MENU THUC UONG</h1>
+
+<ul>
+    <li>1.Café</li>
+    <li>2.Cam vắt</li>
+    <li>3.Nước ép cà rốt</li>
+    <li>4.Nước ép cà chua</li>
+    <li>5.Nước lọc</li>
+    <li>6.Nước dừa</li>
+
+</ul>
+
+<button onclick="order()">Order</button>
+
+<script>
+
+    function order() {
+        let stt = [1, 2, 3, 4, 5, 6]
+        let drink = ["Café", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"]
+        let price = ["18000", "15000", "25000", "22000", "5000", "24000"]
+        let count = 0;
+        do {
+            let chon = prompt("Mời bạn nhập thức uống theo thứ tự");
+            if (chon >= 7) {
+                break;
+            } else {
+                for (let i = 0; i < stt.length; i++) {
+                    if (stt[i] == chon) {
+                        alert(drink[i] + " Có giá  " + price[i])
+                        let soluong = prompt("Nhập số lượng bạn muốn mua")
+                        alert("Bạn đã mua " + soluong + " ly " + drink[i] + ". Bill của bạn là " + (price[i] * soluong))
+                    }
+                }
+            }
+            count++;
+        } while (chon != 7);
+    }
+
+
+</script>
+
+</body>
+</html>

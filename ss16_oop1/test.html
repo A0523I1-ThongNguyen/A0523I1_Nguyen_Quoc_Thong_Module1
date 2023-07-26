@@ -2,16 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Xây dựng lớp mô tả điện thoại</title>
+    <title>Bài 4</title>
 </head>
 <body>
-
+<h3>Chọn đồ uống theo số thứ tự mà bạn muốn.</h3>
+<p>1. Cafe.</p>
+<p>2. Cam vắt.</p>
+<p>3. Nước ép cà rốt.</p>
+<p>4. Nước ép cà chua.</p>
+<p>5. Nước lọc.</p>
+<p>6. Nước dừa.</p>
+<p>7. Thoát gọi món.</p>
+<hr>
+<button onclick="goiMon()">Gọi món</button>
 <script>
+    function goiMon() {
+        let stt = [1, 2, 3, 4, 5, 6];
+        let name = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+        let price = [20.000, 25.000, 25.000, 25.000, 10.000, 25.000];
 
-
-
+        let  x = 0;
+        do {
+            let a = prompt('Nhập món bạn gọi theo stt.');
+            if (a >= 7) {
+                break;
+            } else {
+                for (let i = 0; i < stt.length; i++) {
+                    if (stt[i] == a) {
+                        alert('Bạn đã chọn ' + (name[i]) + ' có giá là ' + price[i] + 'VNĐ');
+                        let b = prompt('Mời bạn nhập số lượng');
+                        alert('số lượng ' + b + name[i] + ' Với tổng tiền là:' + (price[i] * b) + 'VNĐ');
+                    }
+                }
+            }
+            x++;
+        } while (a != 7);
+    }
 </script>
-
-
 </body>
 </html>
