@@ -2,30 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 2</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<h3>
-    Vẽ tam giác vuông rỗng có chiều cao h do người dùng nhập vào.
-</h3>
-<hr>
-<br>
+<style>
+    button {
+        width: 170px;
+        height: 50px;
+        background-color: lightpink;
+        font-size: 13px;
+    }
+</style>
+<h3>[Bài tập] Xây dựng lớp mô tả điện thoại</h3>
+<h2>Nokia</h2>
+<button onclick="checkStatus1()">Kiểm tra trạng thái nokia</button>
+<button onclick="turnOn1()">Bật điện thoại nokia</button>
+<button onclick="turnOff1()">Tắt điện thoại nokia</button>
+<button onclick="charging1()">Sạc pin nokia</button>
+<button onclick="texting1()">Soạn văn bản nokia</button>
+<button onclick="sending1()">Gửi tin nhắn cho iphone</button>
+<button onclick="checkInbox1()">Xem tin nhắn đã nhận</button>
+<button onclick="checkSent1()">Xem tin nhắn đã gửi</button>
+<br><br><br><br>
+<h2>Iphone</h2>
+<button onclick="checkStatus2()">Kiểm tra trạng thái iphone</button>
+<button onclick="turnOn2()">Bật điện thoại iphone</button>
+<button onclick="turnOff2()">Tắt điện thoại iphone</button>
+<button onclick="charging2()">Sạc pin iphone</button>
+<button onclick="texting2()">Soạn văn bản iphone</button>
+<button onclick="sending2()">Gửi tin nhắn cho nokia</button>
+<button onclick="checkInbox2()">Xem tin nhắn đã nhận</button>
+<button onclick="checkSent2()">Xem tin nhắn đã gửi</button>
+<p id="inbox1"></p>
+<p id="inbox2"></p>
+<p id="inbox3"></p>
+<p id="sent1"></p>
+<p id="sent2"></p>
+<p id="sent3"></p>
 <script>
-    let h = prompt('Nhập chiều cao');
-    let m = h;
-    let n = h;
-    for (let i = 1; i <= h; i++) {
-        for (let j = 1 ; j <= 2 * h -1 ; j++) {
-            if (j >= m && j <= n) {
-                document.write("*");
-            } else {
-                document.write('&nbsp ');
+    alert("Đừng quên mở (cả 2) điện thọai trước khi chạy")
+    class Mobile{
+        constructor(_name) {
+            this.battery = 100;
+            this.name = _name
+            this.mess ;
+            this.messDraft = "";
+            this.messInbox ;
+            this.messSent;
+            this.sendMess;
+            this.inbox = [];
+            this.sent = [];
+            this.status = false;
+        }
+        checkOnOff() {
+            if (this.battery == 0 || this.status==false) {
+                alert("Điện thoại đang tắt và lượng pin là: " + this.battery);
+            } else{
+                alert("Điện thoại đang bật và lượng pin là: " + this.battery);
+                return this.status = true;
             }
         }
-        m --;
-        n++;
-        document.write("<br>");
+
+
     }
+    function checkStatus1(){
+        nokia.checkOnOff()
+    }
+    function turnOn1(){
+        nokia.turnOnDevice()
+    }
+    function turnOff1(){
+        nokia.turnOffDevice()
+    }
+    function charging1(){
+        nokia.charging()
+    }
+    function texting1() {
+        nokia.texting()
+    }
+    function sending1() {
+        nokia.sendingTo(iphone)
+        nokia.receiveFrom(iphone)
+    }
+    function checkInbox1(){
+        iphone.checkInbox()
+    }
+    function checkSent1(){
+        nokia.checkSent()
+    }
+
+    function checkStatus2(){
+        iphone.checkOnOff()
+    }
+    function turnOn2(){
+        iphone.turnOnDevice()
+    }
+    function turnOff2(){
+        iphone.turnOffDevice()
+    }
+    function charging2(){
+        iphone.charging()
+    }
+    function texting2(){
+        iphone.texting()
+    }
+    function sending2(){
+        iphone.sendingTo(nokia)
+        iphone.receiveFrom(nokia)
+    }
+    function checkInbox2(){
+        nokia.checkInbox()
+    }
+    function checkSent2(){
+        iphone.checkSent()
+    }
+    let nokia = new Mobile()
+    let iphone = new Mobile()
 </script>
 </body>
 </html>

@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bai 03</title>
+    <title>Tam giac vuong can rong</title>
 </head>
 <body>
+<script>
 
-    <script>
-
-
-        //in tam giac vuong
-        for (let i = 3; i < 5; i++) {
-            for (let j = 0; j < i; j++) { //lap vong 1: 0-1-2 vi < (i=3),vong 2 0-1-2-3 vi < (i++=4)
-                document.write("**")
+    let height = prompt("Nhap chieu cao")
+    for (let i = 0; i < height; i++) {
+        for (let j = 0; j <= i; j++) {
+            if (j === 0 || j === i || i === height - 1) {
+                document.write('*');
+            } else {
+                document.write("&nbsp;&nbsp;");
             }
-            document.write("</br>")
         }
+        document.write("</br>");
+    }
 
 
-    </script>
 
+
+</script>
 </body>
 </html>

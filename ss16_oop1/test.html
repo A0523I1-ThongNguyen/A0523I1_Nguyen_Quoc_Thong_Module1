@@ -5,39 +5,172 @@
     <title>Bài 4</title>
 </head>
 <body>
-<h3>Chọn đồ uống theo số thứ tự mà bạn muốn.</h3>
-<p>1. Cafe.</p>
-<p>2. Cam vắt.</p>
-<p>3. Nước ép cà rốt.</p>
-<p>4. Nước ép cà chua.</p>
-<p>5. Nước lọc.</p>
-<p>6. Nước dừa.</p>
-<p>7. Thoát gọi món.</p>
-<hr>
-<button onclick="goiMon()">Gọi món</button>
-<script>
-    function goiMon() {
-        let stt = [1, 2, 3, 4, 5, 6];
-        let name = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
-        let price = [20.000, 25.000, 25.000, 25.000, 10.000, 25.000];
+<h3>SamSung</h3>
+<button onclick="checkMobile()">Kiem tra SamSung</button>
+<button onclick="on()">ON</button>
+<button onclick="off()">OFF</button>
+<button onclick="luongPin()">LUONG PIN</button>
+<button onclick="sacPin()">SAC PIN</button>
+<button onclick="messenger()">messenger</button>
+<button onclick="guiTinNhan()">Gui tin nhan</button>
+<button onclick="tinDaGui()">Tin da gui</button>
+<button onclick="hopThuDen()">Tin da nhan</button>
+<br><br>
 
-        let  x = 0;
-        do {
-            let a = prompt('Nhập món bạn gọi theo stt.');
-            if (a >= 7) {
-                break;
+<h3>Iphone</h3>
+<button onclick="checkMobileI()">Kiem tra Iphone</button>
+<button onclick="onI()">ON</button>
+<button onclick="offI()">OFF</button>
+<button onclick="luongPinI()">LUONG PIN</button>
+<button onclick="sacPinI()">SAC PIN</button>
+<button onclick="messengerI()">messenger</button>
+<button onclick="guiTinNhanI()">Gui tin nhan</button>
+<button onclick="tinDaGuiI()">Tin da gui</button>
+<button onclick="hopThuDenI">Tin da nhan</button>
+<span id="hopthuden"></span>
+<span id="tindagui"></span>
+<script>
+
+
+    class Mobile {
+        constructor(value) {
+            this.battery = 100;
+            this.value = value;
+            this.checkMobile = false;
+            this.luongPin;
+            this.sacPin;
+            this.messenger = "";
+            this.guiTinNhan;
+            this.nhanTinNhan();
+            this.tinDaGui = [];
+            this.hopThuDen = [];
+            this.messHopthuden;
+
+
+        }
+
+        checkOnOff() {
+            if (this.battery == 0 || this.checkMobile == false) {
+                alert("Mobile OFF . remaining battery : " + this.battery)
             } else {
-                for (let i = 0; i < stt.length; i++) {
-                    if (stt[i] == a) {
-                        alert('Bạn đã chọn ' + (name[i]) + ' có giá là ' + price[i] + 'VNĐ');
-                        let b = prompt('Mời bạn nhập số lượng');
-                        alert('số lượng ' + b + name[i] + ' Với tổng tiền là:' + (price[i] * b) + 'VNĐ');
-                    }
-                }
+                alert(" Mobile ON. remaining battery : " + this.battery)
+                return this.checkMobile = true; //why
             }
-            x++;
-        } while (a != 7);
+        }
+
+        setMessenger(mess) {
+            this.mess = mess;
+        }
+
+        getMessenger() {
+            return this.mess;
+        }
+
+        turnOnMobile() {
+            alert("Mobile : ON")
+        }
+
+        turnOffMobile() {
+            alert("Mobile : OFF")
+        }
+
+        sac() {
+            if (this.battery < 100) {
+                this.battery++;
+                alert(this.battery)
+            } else if (this.battery == 100) {
+                alert("Pin : Full")
+            } else {
+                alert("Error")
+            }
+            return this.battery; //why
+        }
+
+        usedPhone() {
+            if (this.battery == 0) {
+                return turnOffMobile();
+            } else {
+                this.battery = this.battery - 1;
+            }
+            return this.battery;//why
+        }
+
+        soanMess() {
+            if (this.checkMobile == true) {
+                this.messenger = prompt("Soan tin nhan")
+                this.usedPhone()
+            } else {
+                alert("Phone OFF or out of battery (Het Pin)")
+            }
+            return this.messenger;
+        }
+
+        guiMess(tinnhan) {
+            if (this.checkMobile == true) {
+                if (confirm("Gui tin nhan") == true) {
+                    this.guiTinNhan = tinnhan.setMessenger(this.messenger) //why tro toi this.messenger
+                    this.usedPhone();
+                    this.tinDaGui.unshift(tinnhan.getMessenger())
+                    alert("Da gui thanh cong")
+                    return this.guiTinNhan;
+                } else {
+                    return;
+                }
+            } else {
+                alert("Phone OFF or out of battery (Het Pin)")
+            }
+        }
+
+        nhanTinNhan(tn) {
+            if (this.checkMobile == true) {
+                this.messHopthuden = tn.getMessenger();
+                this.hopThuDen.unshift(tn.getMessenger()) //why
+                this.usedPhone();
+                return this.messHopthuden;
+            } else {
+                alert("Phone OFF or out of battery (Het Pin)")
+            }
+            return this.messHopthuden;
+        }
+
+        checkMessDaNhan() {
+            if (this.checkMobile == true) {
+                for (let i = 0; i < this.hopThuDen.length; i++) {
+                    document.getElementById("hopthuden").innerText = " Tin da nhan la : " + this.hopThuDen[i];
+                    this.usedPhone()
+                }
+            } else {
+                alert("Phone OFF or out of battery (Het Pin)")
+            }
+        }
+
+        checkMessDaGui() {
+            if (this.checkMobile == true) {
+                for (let i = 0; i < this.tinDaGui.length; i++) {
+                    document.getElementById("tindagui").innerText = "Tin da gui la :" + this.tinDaGui[i]
+                    this.usedPhone();
+                }
+            } else {
+                alert("Phone OFF or out of battery (Het Pin)")
+            }
+        }
+
     }
+
+
+
+    function checkMobile() {
+        samsung.checkOnOff()
+    }
+
+    let samsung = new Mobile();
+    let iphone = new Mobile();
+</script>
+
+
+<script>
+
+
 </script>
 </body>
 </html>

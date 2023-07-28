@@ -8,7 +8,7 @@
 
 <script>
 
-    let phone = function (pin) {
+    let phone = function () {
         this.pin = 100;
 
         this.on = function () {
@@ -29,7 +29,7 @@
         }
 
         this.luongpin = function () {
-            alert("Luong pin con lai "+ this.pin-- + "%");
+            alert("Luong pin con lai " + this.pin-- + "%");
         }
 
     };
@@ -43,6 +43,7 @@
     function off() {
         goiPhone.off();
     }
+
     function sac() {
         goiPhone.sac();
     }
@@ -50,6 +51,7 @@
     function messenger() {
         goiPhone.messenger()
     }
+
     function luongpin() {
         goiPhone.luongpin()
     }
@@ -57,6 +59,16 @@
 </script>
 
 <font style="margin-left: 300px; color: red;"> MY PHONE </font>
+
+<button type="button" onclick="on()" style="cursor: pointer;
+
+    background-color: #0000FF;
+    color: black;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 20px;"> ON PHONE
+
+</button>
 
 <button type="button" onclick="off()" style="cursor: pointer;
 
@@ -68,15 +80,6 @@
 
 </button>
 
-<button type="button" onclick="on()" style="cursor: pointer;
-
-    background-color: #0000FF;
-    color: black;
-    padding: 20px 10px;
-    border: none;
-    border-radius: 20px;"> ON PHONE
-
-</button>
 
 <button type="button" onclick="sac()" style="cursor: pointer;
     background-color: #0000FF;
