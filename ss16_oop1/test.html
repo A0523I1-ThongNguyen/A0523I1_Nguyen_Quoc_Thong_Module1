@@ -2,174 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 4</title>
+    <title>Bài 1</title>
 </head>
 <body>
-<h3>SamSung</h3>
-<button onclick="checkMobile()">Kiem tra SamSung</button>
-<button onclick="on()">ON</button>
-<button onclick="off()">OFF</button>
-<button onclick="luongPin()">LUONG PIN</button>
-<button onclick="sacPin()">SAC PIN</button>
-<button onclick="messenger()">messenger</button>
-<button onclick="guiTinNhan()">Gui tin nhan</button>
-<button onclick="tinDaGui()">Tin da gui</button>
-<button onclick="hopThuDen()">Tin da nhan</button>
-<br><br>
-
-<h3>Iphone</h3>
-<button onclick="checkMobileI()">Kiem tra Iphone</button>
-<button onclick="onI()">ON</button>
-<button onclick="offI()">OFF</button>
-<button onclick="luongPinI()">LUONG PIN</button>
-<button onclick="sacPinI()">SAC PIN</button>
-<button onclick="messengerI()">messenger</button>
-<button onclick="guiTinNhanI()">Gui tin nhan</button>
-<button onclick="tinDaGuiI()">Tin da gui</button>
-<button onclick="hopThuDenI">Tin da nhan</button>
-<span id="hopthuden"></span>
-<span id="tindagui"></span>
+<h3>
+    Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n.
+    Với m, n là các số nhập từ bàn phím.
+</h3>
+<hr>
 <script>
+    let m = prompt('Nhập m:');
+    let n = prompt('Nhập n:');
+    let arr = [];
 
-
-    class Mobile {
-        constructor(value) {
-            this.battery = 100;
-            this.value = value;
-            this.checkMobile = false;
-            this.luongPin;
-            this.sacPin;
-            this.messenger = "";
-            this.guiTinNhan;
-            this.nhanTinNhan();
-            this.tinDaGui = [];
-            this.hopThuDen = [];
-            this.messHopthuden;
-
-
+    for (let i = 0; i < m; i++ ){
+        let pt = [];
+        for (let j = 0; j < n; j++){
+            let value = prompt('Nhập giá trị tại [ '+i+' ]'+' [ '+j+' ]');
+            pt.push(value);
         }
-
-        checkOnOff() {
-            if (this.battery == 0 || this.checkMobile == false) {
-                alert("Mobile OFF . remaining battery : " + this.battery)
-            } else {
-                alert(" Mobile ON. remaining battery : " + this.battery)
-                return this.checkMobile = true; //why
-            }
-        }
-
-        setMessenger(mess) {
-            this.mess = mess;
-        }
-
-        getMessenger() {
-            return this.mess;
-        }
-
-        turnOnMobile() {
-            alert("Mobile : ON")
-        }
-
-        turnOffMobile() {
-            alert("Mobile : OFF")
-        }
-
-        sac() {
-            if (this.battery < 100) {
-                this.battery++;
-                alert(this.battery)
-            } else if (this.battery == 100) {
-                alert("Pin : Full")
-            } else {
-                alert("Error")
-            }
-            return this.battery; //why
-        }
-
-        usedPhone() {
-            if (this.battery == 0) {
-                return turnOffMobile();
-            } else {
-                this.battery = this.battery - 1;
-            }
-            return this.battery;//why
-        }
-
-        soanMess() {
-            if (this.checkMobile == true) {
-                this.messenger = prompt("Soan tin nhan")
-                this.usedPhone()
-            } else {
-                alert("Phone OFF or out of battery (Het Pin)")
-            }
-            return this.messenger;
-        }
-
-        guiMess(tinnhan) {
-            if (this.checkMobile == true) {
-                if (confirm("Gui tin nhan") == true) {
-                    this.guiTinNhan = tinnhan.setMessenger(this.messenger) //why tro toi this.messenger
-                    this.usedPhone();
-                    this.tinDaGui.unshift(tinnhan.getMessenger())
-                    alert("Da gui thanh cong")
-                    return this.guiTinNhan;
-                } else {
-                    return;
-                }
-            } else {
-                alert("Phone OFF or out of battery (Het Pin)")
-            }
-        }
-
-        nhanTinNhan(tn) {
-            if (this.checkMobile == true) {
-                this.messHopthuden = tn.getMessenger();
-                this.hopThuDen.unshift(tn.getMessenger()) //why
-                this.usedPhone();
-                return this.messHopthuden;
-            } else {
-                alert("Phone OFF or out of battery (Het Pin)")
-            }
-            return this.messHopthuden;
-        }
-
-        checkMessDaNhan() {
-            if (this.checkMobile == true) {
-                for (let i = 0; i < this.hopThuDen.length; i++) {
-                    document.getElementById("hopthuden").innerText = " Tin da nhan la : " + this.hopThuDen[i];
-                    this.usedPhone()
-                }
-            } else {
-                alert("Phone OFF or out of battery (Het Pin)")
-            }
-        }
-
-        checkMessDaGui() {
-            if (this.checkMobile == true) {
-                for (let i = 0; i < this.tinDaGui.length; i++) {
-                    document.getElementById("tindagui").innerText = "Tin da gui la :" + this.tinDaGui[i]
-                    this.usedPhone();
-                }
-            } else {
-                alert("Phone OFF or out of battery (Het Pin)")
-            }
-        }
-
+        arr.push(pt);
     }
 
-
-
-    function checkMobile() {
-        samsung.checkOnOff()
+    function tinhTong() {
+        let evenNumber = 0;
+        let sumEvenNumber = 0;
+        for (let i = 0; i< arr.length ;i++) {
+            for (let j = 0; j < arr[i].length ; j++) {
+                if (arr[i][j] % 2 == 0) {
+                    evenNumber += 1;
+                    sumEvenNumber += +arr[i][j];
+                }
+            }
+        }
+        document.write('Mảng vừa tạo có '+evenNumber+' số chẵn.');
+        document.write('Tổng các số chẵn: '+sumEvenNumber);
     }
-
-    let samsung = new Mobile();
-    let iphone = new Mobile();
-</script>
-
-
-<script>
-
+    tinhTong();
 
 </script>
 </body>

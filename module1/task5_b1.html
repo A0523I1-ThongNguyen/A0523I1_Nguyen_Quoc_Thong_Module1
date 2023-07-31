@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+
+    let rowM = prompt("Nhap so hang:");
+    let colN = prompt("Nhap so cot:")
+    let arrayRong = [];
+
+    for (let i = 0; i < rowM; i++) {
+        let arrayRongTam = [];
+        for (let j = 0; j < colN; j++) {
+            let nhapSo = prompt("Nhap phan tu o vitri [" + i + "] [" + j + "]")
+            arrayRongTam.push(nhapSo)
+        }
+        arrayRong.push(arrayRongTam)
+    }
+
+    function tinhSum() {
+        let count = 0
+        let tongSoChan = 0;
+        for (let i = 0; i < arrayRong.length; i++) {
+            for (let j = 0; j < arrayRong[i].length; j++) {
+                if (arrayRong[i][j] % 2 == 0) {
+                    count++;
+                    tongSoChan += +arrayRong[i][j]
+                }
+            }
+        }
+        document.write("co " + count + " so chan o mang </br>")
+        document.write("Tong cac so chan la : " + tongSoChan)
+    }
+
+    tinhSum();
+
+</script>
+</body>
+</html>

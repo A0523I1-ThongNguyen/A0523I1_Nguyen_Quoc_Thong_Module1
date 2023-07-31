@@ -2,29 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
 </head>
 <body>
-
 <script>
 
-    let array1 = prompt("enter")
-    let array2 = prompt("enter")
-    let array = array1.concat(array2);
-    let array3 = []
-    let array4 = []
+    let string = prompt("Nhap ki tu");
+    let stringRong = [];
+    let count = 1;
+    stringRong.push(string[0])
+    demKiTuKhacNhau(string)
 
-    for (let i = 0; i <array.length; i++){
-        if(!array3.includes(array[i])){
-            array3.push(array[i])
-        }else {
-            array4.push(array[i])
+    function demKiTuKhacNhau(ex) {
+        for (let i = 0; i < string.length; i++) {
+           let  flag = true;
+            for (let j = 0; j < stringRong.length; j++) {
+                if (string[i] === stringRong[j]) {
+                    flag = false
+                    //break;
+                }
+            }
+            if (flag === true) {
+                stringRong.push(string[i])
+                count++;
+            }
         }
+        document.write("cac ki tu khac nhau : " + stringRong + " co so luon ki tu nhau la " + count)
     }
 
-    document.write(array4.join("-"))
-
 </script>
-
 </body>
 </html>

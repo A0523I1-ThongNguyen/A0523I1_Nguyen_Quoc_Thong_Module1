@@ -64,8 +64,100 @@
                 return this.status = true;
             }
         }
-
-
+        setMess(newMess){
+            this.mess = newMess;
+        }
+        getMess(){
+            return this.mess
+        }
+        turnOnDevice(){
+            alert("Điện thoại đã được bật")
+            return this.status = true;
+        }
+        turnOffDevice(){
+            alert("Điện thoại đã tắt")
+            return this.status = false;
+        }
+        charging() {
+            if (this.battery<100) {
+                this.battery++;
+                console.log(this.battery);
+            } else {
+                alert("Đã đầy pin!")
+            }
+            return this.battery;
+        }
+        used() {
+            if (this.battery==0) {
+                turnOffDevice();
+            }else {
+                this.battery = this.battery-1;
+            }
+            return this.battery
+        }
+        texting(){
+            if(this.status==true) {
+                this.messDraft = prompt("Nhập vào tin nhắn bạn muốn soạn:")
+                alert("Đây chỉ là tin nhắn soạn sẵn(tin nháp), có thể dùng để gửi đi!")
+                this.used()
+            } else {
+                alert("Điện thoại đang tắt hoặc đã hết pin")
+            }
+            return this.messDraft;
+        }
+        sendingTo(name){
+            if(this.status == true) {
+                if (confirm("Bạn muốn gửi tin nhắn đã soạn -> nhấn ok || cancel để nhập vào tin nhắn bạn muốn gửi ")==true) {
+                    this.sendMess = name.setMess(this.messDraft)
+                    this.used()
+                    this.sent.unshift(name.getMess())
+                    alert("Đã gửi thành công")
+                    return this.sendMess;
+                } else {
+                    this.sendMess = name.setMess(prompt("Nhập vào văn bản bạn muốn gửi: "));
+                    this.used()
+                    this.sent.unshift(name.getMess())
+                    alert("Đã gửi thành công")
+                    return this.sendMess;
+                }
+            } else {
+                alert("Điện thoại đang tắt hoặc đã hết pin")
+            }
+        }
+        receiveFrom(name){
+            if(this.status == true) {
+                this.messInbox = name.getMess()
+                this.inbox.unshift(name.getMess())
+                this.used();
+                return this.messInbox;
+            } else {
+                alert("Điện thoại đang tắt hoặc đã hết pin")
+            }
+            return this.messInbox
+        }
+        checkInbox(){
+            if (this.status == true) {
+                alert("Chỉ có thể hiển thị tối đa 3 tin nhắn theo thứ tự mới nhất!")
+                for(let i=0; i < this.inbox.length ;i++) {
+                    document.getElementById("inbox"+(i+1)).innerText="Tin đã nhận thứ "+ (i+1)+" là: "+this.inbox[i]
+                    this.used()
+                }
+            }
+            else {
+                alert("Điện thoại đang tắt hoặc đã hết pin")
+            }
+        }
+        checkSent(){
+            if(this.status == true) {
+                alert("Chỉ có thể hiển thị tối đa 3 tin nhắn theo thứ tự mới nhất!")
+                for (let j=0;j<this.sent.length;j++) {
+                    document.getElementById("sent"+(j+1)).innerText="Tin đã gửi thứ "+ (j+1) + " là: "+this.sent[j]
+                    this.used()
+                }
+            } else {
+                alert("Điện thoại đang tắt hoặc đã hết pin")
+            }
+        }
     }
     function checkStatus1(){
         nokia.checkOnOff()

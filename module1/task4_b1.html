@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa
+
+    function String(string) {
+        let words = string.split(" ");
+        let result = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        let change = result.join(" ");
+        return change;
+    }
+
+
+    function LongestWord(xauChuoi) {
+        let string = xauChuoi.split(" ")
+        let chuoiDaiNhat = " ";
+        for(let i = 0; i < string.length;i++){
+            let check = string[i]
+            if (check.length > chuoiDaiNhat.length){
+                chuoiDaiNhat = check;
+            }
+        }
+        return chuoiDaiNhat
+    }
+
+    function main() {
+        let input = prompt("Nhap xau ki tu");
+        document.write("xau khi chua chuan hoa: " +input+ "</br>" )
+        document.write("Xau khi da chuan hoa: "+String(input) +"</br>");
+        document.write("tu dai nhat trong xau chuoi la : "+LongestWord(input))
+    }
+    main()
+</script>
+</body>
+</html>
